@@ -1,7 +1,7 @@
 {
-  "name": "front-dev-template",
+  "name": "kdl",
   "version": "1.0.0",
-  "description": "Frontend starter",
+  "description": "KDL Website",
   "main": "index.js",
   "scripts": {
     "build": "webpack --env.mode=production",
@@ -9,18 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/absens-x/front-dev-template.git"
+    "url": "git+https://github.com/absens-x/kdl.git"
   },
-  "keywords": [
-    "javascript",
-    "html",
-    "css",
-    "sass",
-    "webpack",
-    "pug",
-    "starter-template",
-    "frontend layouts"
-  ],
+  "keywords": [],
   "author": "Yusuf Gamkartiev",
   "license": "MIT",
   "devDependencies": {
@@ -56,9 +47,9 @@
     "webpack-dev-server": "^3.10.1"
   },
   "bugs": {
-    "url": "https://github.com/absens-x/front-dev-template/issues"
+    "url": "https://github.com/absens-x/kdl/issues"
   },
-  "homepage": "https://github.com/absens-x/front-dev-template#readme",
+  "homepage": "https://github.com/absens-x/kdl#readme",
   "dependencies": {
     "normalize.css": "^8.0.1"
   }
