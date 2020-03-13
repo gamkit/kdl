@@ -26,7 +26,14 @@
 
 .gridtest-block {
     height: 100vh;
+
+     
+
+    @include mq('md') {
+        .heading {font-size: 22px;}
+    }
 }
+
 
 
 
