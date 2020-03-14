@@ -1,0 +1,21 @@
+.header {
+    .header__top {
+        padding: 15px 30px;
+        background-color: $color_dark;
+        color: #fff;
+    }
+
+    .header__nav {
+        width: size(9);
+    }
+
+    .header__r-links {
+        width: size(3);
+        text-align: right;
+    }
+
+    .header__social-links {
+        margin: 0;
+    }
+
+}
