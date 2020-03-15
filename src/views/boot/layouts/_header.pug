@@ -1,7 +1,7 @@
 header.header
     .header__wrap
-        .header__top
-            nav.header__nav.nav.hp-dsp-ib
+        .header__top.row
+            nav.header__nav.nav
                 ul.nav__list.nav__list--row
                     li.nav__item
                         a(href="index.html") Главная
@@ -17,14 +17,24 @@ header.header
                         a(href="reports.html") Отчеты
                     li.nav__item
                         a(href="contacts.html") Контакты
-            .header__r-links.hp-dsp-ib
-                a(href="").header__donut-link Нужна помощь!
-                ul.header__social-links.social-links.row.hp-dsp-if
+            .header__r-links.row
+                a(href="").header__help-link Нужна помощь!
+                ul.header__social-links.social-links.social-links--theme--white.row
                     li.social-links__item
-                        a(href="") 1
+                        a(href="")
+                            i.glyph-social-vk
                     li.social-links__item
-                        a(href="") 2
+                        a(href="")
+                            i.glyph-social-fb
                     li.social-links__item
-                        a(href="") 3
+                        a(href="")
+                            i.glyph-social-tg
 
-        .header__bottom
+        .header__bottom.row
+            .header__phone-numbers.phone-numbers
+                i.phone-numbers__glyph.glyph-phone-1
+                p 8 (960) 435-55-22
+                p 8 (928) 731-26-02
+            a.header__logo(href="/")
+                img(src="img/svg/logo.svg", alt="")
+            a(href="").header__btn-donut.btn.btn-donut.btn--theme--orange <i class="btn__glyph glyph-kid"></i> Помочь

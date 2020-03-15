@@ -55,6 +55,7 @@ module.exports = (env = {}) => {
         plugins.push(new CopyWebpackPlugin([
             { from: 'img', to: 'img'},
             { from: 'fonts', to: 'fonts'},
+            { from: 'uploads', to: 'uploads'},
             { from: 'assets', to: 'assets'},
         ]))
 

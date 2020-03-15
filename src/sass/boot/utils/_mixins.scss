@@ -19,6 +19,9 @@ xsmall - Smartphones Mobiles
     @else if ($type == 'lg') {
         @media screen and (min-width: $screen_lg) and (max-width: $screen_xl - 1) { @content; }
     }
+    @else if ($type == 'lg_max') {
+        @media screen and (max-width: $screen_lg) { @content; }
+    }
     
     // 
     @else if ($type == 'md') {
@@ -26,6 +29,9 @@ xsmall - Smartphones Mobiles
     }
     @else if ($type == 'md' and $orientation) {
         @media screen and (min-width: $screen_md) and (max-width: $screen_lg - 1) and (orientation: landscape) { @content; }
+    }
+    @else if ($type == 'md_max') {
+        @media screen and (max-width: $screen_md) { @content; }
     }
     
     // 

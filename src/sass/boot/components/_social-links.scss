@@ -1,4 +1,32 @@
 .social-links {
-    
+    .social-links__item {
+        margin-right: 15px;
+        &:last-child {margin-right: 0;}
+        a {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            transition: 0.3s;
+            
+        }
+    }
+
+    &.social-links--theme--white {
+        .social-links__item a {
+            border-radius: 25px;
+            font-size: 10px;
+            padding-top: 3px;
+            text-align: center;
+            background-color: rgba($color: #fff, $alpha: 0.08);
+            color: rgba($color: #fff, $alpha: 0.7);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+
+            &:hover {
+                color: #fff;
+                background-color: $color_blue;
+            }
+            
+        }
+    }
 }
 

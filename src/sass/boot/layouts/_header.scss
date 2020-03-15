@@ -1,6 +1,14 @@
 .header {
+    .header__wrap {
+        position: fixed;
+        width: 100%;
+        z-index: $z_header;
+    }
+    
     .header__top {
-        padding: 15px 30px;
+        padding: 10px 30px;
+        margin: 0;
+        align-items: center;
         background-color: $color_dark;
         color: #fff;
     }
@@ -11,11 +19,54 @@
 
     .header__r-links {
         width: size(3);
-        text-align: right;
+        margin-left: auto;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header__help-link {
+        margin-right: 15px;
     }
 
     .header__social-links {
         margin: 0;
+        padding: 0 15px;
     }
+
+    .header__bottom {
+        position: relative;
+        padding: 10px 30px;
+        margin: 0;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .header__phone-numbers {
+        margin-right: auto;
+    }
+
+    .header__logo {
+        @include abs-center;
+        width: 58.18px;
+        height: 48px;
+        img {@include img-responsive;}
+    }
+
+    
+    @include mq("lg_max") {
+        .header__nav {
+            width: size(8);
+        } 
+        .header__r-links {
+            width: size(4);
+        }
+        .header__nav .nav__item {
+            font-size: 12px;
+        }
+        
+    }
+    
 
 }

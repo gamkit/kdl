@@ -1,0 +1,17 @@
+.phone-numbers {
+    position: relative;
+    p {
+        margin: 3px 0;
+        margin-left: 30px;
+        color: rgba($color_dark, $alpha: 0.7);
+    }
+
+    .phone-numbers__glyph {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 20px;
+        margin: auto;
+        color: $color_orange;
+    }
+ }
