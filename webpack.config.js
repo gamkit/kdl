@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -57,7 +58,13 @@ module.exports = (env = {}) => {
             { from: 'fonts', to: 'fonts'},
             { from: 'uploads', to: 'uploads'},
             { from: 'assets', to: 'assets'},
-        ]))
+        ]));
+
+        plugins.push(new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        }));
 
         if(isProd) {
             plugins.push(

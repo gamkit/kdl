@@ -11,8 +11,7 @@ block content
             .home-opening__video
                video( muted autoplay loop playsinline )
                   source(src="uploads/video/home.webm" type="video/webm")
-                  source(src="uploads/video/home.mp4" type="video/mp4")
-      
+                  source(src="uploads/video/home.mp4" type="video/mp4")    
       
       //- SECTION
       section.home-about
@@ -23,14 +22,14 @@ block content
                      h2 О фонде
                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
                   .home-about__collected
-                     ul.home-about__collected-list.collected-list.row
-                        li.collected-list__item
+                     ul.home-about__collected-info-list.collected-info-list.row
+                        li.collected-info-list__item.collected-info-item
                            p 11 522 000 <b>р.</b>
                            span Собрано за 2017
-                        li.collected-list__item
+                        li.collected-info-list__item.collected-info-item
                            p 245 000 <b>р.</b>
                            span Собрано за февраль
-                        li.collected-list__item
+                        li.collected-info-list__item.collected-info-item
                            p 25 001 540 <b>р.</b>
                            span За все время
       
@@ -39,9 +38,9 @@ block content
          .home-needy__wrap
             .container
                h3.home-needy__heading Им нужна ваша помощь
-               ul.home-needy__needy-list.needy-list.row
+               ul.owl-carousel.needy-list__owl-carousel.home-needy__needy-list.needy-list
                   //- 
-                  li.needy-item
+                  li.item.needy-list__item.needy-item
                      .needy-item__preview
                         img(src="uploads/images/needy.jpg", alt="")
                      .needy-item__desc
@@ -53,7 +52,7 @@ block content
                            p.needy-item__needed Требуется <br/><b>25000 р.</b>
                   
                   //- 
-                  li.needy-item
+                  li.item.needy-list__item.needy-item
                      .needy-item__preview
                         img(src="uploads/images/needy.jpg", alt="")
                      .needy-item__desc
@@ -65,7 +64,7 @@ block content
                            p.needy-item__needed Требуется <br/><b>25000 р.</b>
                   
                   //- 
-                  li.needy-item
+                  li.item.needy-list__item.needy-item
                      .needy-item__preview
                         img(src="uploads/images/needy.jpg", alt="")
                      .needy-item__desc
@@ -77,7 +76,19 @@ block content
                            p.needy-item__needed Требуется <br/><b>25000 р.</b>
                   
                   //- 
-                  li.needy-item
+                  li.item.needy-list__item.needy-item
+                     .needy-item__preview
+                        img(src="uploads/images/needy.jpg", alt="")
+                     .needy-item__desc
+                        p.needy-item__name <b>Jane Doe</b>, 10 лет<br/>
+                           span Диагноз: ДЦП
+                        .needy-item__collect.row
+                           div.needy-item__bar <span></span>
+                           p.needy-item__collected Собрано <br/><b>12000 р.</b>
+                           p.needy-item__needed Требуется <br/><b>25000 р.</b>
+                  
+                  //- 
+                  li.item.needy-list__item.needy-item
                      .needy-item__preview
                         img(src="uploads/images/needy.jpg", alt="")
                      .needy-item__desc
@@ -88,6 +99,9 @@ block content
                            p.needy-item__collected Собрано <br/><b>12000 р.</b>
                            p.needy-item__needed Требуется <br/><b>25000 р.</b>
 
+      //- SECTION
+      section.home-howtohelp
+         .home-howtohelp__wrap
 
 
                   

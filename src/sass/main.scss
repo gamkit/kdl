@@ -79,17 +79,16 @@
             background-position: center center;
             background-size: 50%;
             filter: brightness(0) invert(100%);
-            opacity: 0.12;
+            opacity: 0.09;
             z-index: 0;
         }
     }
 
     .home-about__inner {
-        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        min-height: 100vh;
         z-index: 1;
     }
 
@@ -105,7 +104,11 @@
         }
     }
 
-    .home-about__collected-list {
+    .home-about__collected {
+        margin: 0 15px;
+    }
+
+    .home-about__collected-info-list {
         justify-content: space-around;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.64) 100%);
         border: 6px solid #FFFFFF;
@@ -113,13 +116,14 @@
         border-radius: 15px;
         color: $color_dark;
         padding-bottom: 56px;
+        margin-bottom: 56px;
     }
 
-    .collected-list__item {
+    .collected-info-list__item {
         margin: 15px;
         text-align: left;
 
-        &:nth-child(2) {margin: auto;}
+        // &:nth-child(2) {margin: auto;}
         p {
             font: rem($font_size_lg) $second_font_family;
             margin-bottom: 16px;
@@ -142,6 +146,24 @@
 
     .home-needy__heading {
         text-align: center;
+    }
+
+    .needy-list__owl-carousel {
+        .owl-nav {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .owl-prev,.owl-next {
+            border: none;
+            outline: none;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
     }
 }
 

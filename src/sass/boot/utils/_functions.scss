@@ -5,10 +5,10 @@
 */
 @function size($cols, $margin: null) {
     @if $margin == null {
-        @return calc(100% / 12 * #{$cols} - #{$gutter});
+        @return calc(100% / 12 * #{$cols} - #{$gutter * 2});
     }
     @else {
-        @return calc(100% / 12 * #{$cols} -  #{$margin + 'px'});
+        @return calc(100% / 12 * #{$cols} -  #{$margin});
     }
 }
 

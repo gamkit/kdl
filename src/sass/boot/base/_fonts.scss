@@ -26,6 +26,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.glyph-ar-next:before {
+  content: "\e906";
+}
+.glyph-ar-prev:before {
+  content: "\e908";
+}
 .glyph-hamburger:before {
   content: "\e907";
 }
