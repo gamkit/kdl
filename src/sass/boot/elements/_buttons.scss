@@ -58,6 +58,10 @@
         padding-left: 60px;
         transition: 0.2s ease-out;
 
+        span {
+            display: inline;
+        }
+
         .btn__glyph {
             position: absolute;
             left: 0;
@@ -91,11 +95,49 @@
         text-decoration: none;
     }
 
+    &.btn-hamburger {
+        color: $color_dark;
+        padding: 0;
+    }
+
     &.btn-submit {
         
     }
 
     
 
+}
 
+
+/*
+******************************************************************
+* Buttons another
+******************************************************************
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+******************************************************************
+* Buttons media queries
+******************************************************************
+*/
+
+@include mq("sm_max") {
+    .btn-donut {
+        width: 42px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        overflow: hidden;
+        border-radius: 21px 0 21px 21px;
+
+        span {display: none !important;}
+    }
 }

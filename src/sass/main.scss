@@ -19,22 +19,46 @@
 
 
 /*
-******************************************************************
-* Gridtest Page
+* Home Page
 ******************************************************************
 */
 
-.gridtest-block {
-    height: 100vh;
+.home-opening {
+    
+    .home-opening__wrap {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
 
-     
+    .home-opening__video {
+        position: absolute;
+        top: 0;
+        left: 0;
 
-    @include mq('md') {
-        .heading {font-size: 22px;}
+        video {
+            min-width: 100vw;
+            min-height: 560px;
+            // min-height: 100vh;
+            
+        }
     }
 }
 
 
+.home-about {
+    .home-about__wrap {
+        background-color: $color_orange;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .home-about__desc {
+        width: size(8);
+        margin: auto;
+    }
+}
 
 
 

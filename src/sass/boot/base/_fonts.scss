@@ -26,11 +26,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.glyph-hamburger:before {
+  content: "\e907";
+}
 .glyph-ar-left:before {
   content: "\e904";
-}
-.glyph-ar-right:before {
-  content: "\e905";
 }
 .glyph-kid:before {
   content: "\e903";
@@ -46,4 +46,7 @@
 }
 .glyph-social-fb:before {
   content: "\ea90";
+}
+.glyph-ar-right:before {
+  content: "\e905";
 }

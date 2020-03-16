@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?g1pezr');
-  src:  url('fonts/icomoon.eot?g1pezr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?g1pezr') format('truetype'),
-    url('fonts/icomoon.woff?g1pezr') format('woff'),
-    url('fonts/icomoon.svg?g1pezr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?6rfcid');
+  src:  url('fonts/icomoon.eot?6rfcid#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6rfcid') format('truetype'),
+    url('fonts/icomoon.woff?6rfcid') format('woff'),
+    url('fonts/icomoon.svg?6rfcid#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,25 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-left:before {
-  content: "\e904";
+.icon-hamburger:before {
+  content: "\e907";
 }
-.icon-arrow-right:before {
-  content: "\e905";
+.icon-ar-left:before {
+  content: "\e904";
 }
 .icon-kid:before {
   content: "\e903";
 }
-.icon-phone-1:before {
+.icon-phone1:before {
   content: "\e902";
 }
-.icon-social-tg:before {
+.icon-tg:before {
   content: "\e901";
 }
-.icon-social-vk:before {
+.icon-vk:before {
   content: "\e900";
 }
-.icon-social-fb:before {
+.icon-fb:before {
   content: "\ea90";
 }
-
+.icon-ar-right:before {
+  content: "\e905";
+}

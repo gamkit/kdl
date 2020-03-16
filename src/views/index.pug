@@ -4,5 +4,29 @@ extends boot/base/_base.pug
 block content
    .page.page--home
       +layout('header')
+      section.home-opening
+         .home-opening__wrap
+            .home-opening__video
+               video( muted autoplay loop playsinline )
+                  source(src="uploads/video/home.webm" type="video/webm")
+                  source(src="uploads/video/home.mp4" type="video/mp4")
+      
+      section.home-about
+         .home-about__wrap
+            .container
+               .home-about__desc
+                  h2 О фонде
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+               .home-about__collected
+                  ul.home-about__collected-list.collected-list.row
+                     li.collected-list__item
+                        p 11 522 000 <b>р.</b>
+                        span Собрано за 2017
+                     li.collected-list__item
+                        p 245 000 <b>р.</b>
+                        span Собрано за февраль
+                     li.collected-list__item
+                        p 25 001 540 р. <b>р.</b>
+                        span За все время
      
       

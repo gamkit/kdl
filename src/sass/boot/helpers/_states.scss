@@ -1,7 +1,13 @@
 .visible {
-    display: block;
+    display: block !important;
 }
 
 .hidden {
     display: none !important;
+}
+
+@include mq('md_min') {
+    .hdn-md {
+        display: none !important;
+    }
 }

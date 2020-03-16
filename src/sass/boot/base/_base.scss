@@ -25,6 +25,7 @@ h6 {
     font-family: $second_font_family;
     font-style: normal;
     font-weight: bold;
+    margin-top: 56px;
 }
 
 h1 {font-size: rem($font_size_xl);}
@@ -32,7 +33,9 @@ h2 {font-size: rem($font_size_lg);}
 h3 {font-size: rem($font_size_md);}
 h4 {font-size: rem($font_size_md);}
 
-
+p {
+    line-height: $second_font_line_height;
+}
 
 a {
     color: $color_link;
