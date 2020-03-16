@@ -43,7 +43,9 @@ a {
 }
 
 
-
+ul {
+    padding: 0;
+}
 li {
     @if($is_global_list_style_off) {
         @include toggle-list-style(true);

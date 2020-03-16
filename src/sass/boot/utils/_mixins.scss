@@ -10,6 +10,7 @@ xsmall - Smartphones Mobiles
 
 ******************************************************************
 */
+
 @mixin mq($type, $orientation: false) {
     @if($type == 'xl') {
         @media screen and (min-width: $screen_xl) {

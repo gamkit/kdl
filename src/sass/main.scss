@@ -29,6 +29,17 @@
         position: relative;
         height: 100vh;
         overflow: hidden;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: rgba($color: $color_dark, $alpha: 0.6);
+            z-index: 1;
+        }
     }
 
     .home-opening__video {
@@ -45,18 +56,92 @@
     }
 }
 
+// -------------------------------------------------
 
 .home-about {
     .home-about__wrap {
+        position: relative;
         background-color: $color_orange;
         color: #fff;
+        min-height: 100vh;
         text-align: center;
         overflow: hidden;
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-image: url('/img/svg/logo.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50%;
+            filter: brightness(0) invert(100%);
+            opacity: 0.12;
+            z-index: 0;
+        }
+    }
+
+    .home-about__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 
     .home-about__desc {
         width: size(8);
         margin: auto;
+        margin-bottom: 56px;
+
+        p {
+            opacity: 0.7;
+            transition: 0.3s;
+            &:hover {opacity: 1;}
+        }
+    }
+
+    .home-about__collected-list {
+        justify-content: space-around;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.64) 100%);
+        border: 6px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 15px;
+        color: $color_dark;
+        padding-bottom: 56px;
+    }
+
+    .collected-list__item {
+        margin: 15px;
+        text-align: left;
+
+        &:nth-child(2) {margin: auto;}
+        p {
+            font: rem($font_size_lg) $second_font_family;
+            margin-bottom: 16px;
+            
+            b { color: $color_orange; }
+        }
+
+        span {
+            font: rem($font_size_sm);
+            opacity: 0.7;
+        }
+    }
+}
+
+
+// -------------------------------------------------
+
+
+.home-needy {
+
+    .home-needy__heading {
+        text-align: center;
     }
 }
 
