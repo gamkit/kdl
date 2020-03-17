@@ -27,16 +27,24 @@
 
 
 
-.row {
+.row, .row-mg {
     display: flex;
     flex-wrap: wrap;
     margin-left: -$gutter;
     margin-right: -$gutter;
 }
 
+.row-mg {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 .row:before,
-.row:after {
+.row:after ,
+.row-mg:before,
+.row-mg:after 
+{
     content: "";
     display: block;
     clear: both;

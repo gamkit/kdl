@@ -27,12 +27,15 @@ h6 {
     font-weight: bold;
     margin-top: 56px;
     line-height: 130%;
+    text-align: center;
 }
 
 h1 {font-size: rem($font_size_xl);}
 h2 {font-size: rem($font_size_lg);}
 h3 {font-size: rem($font_size_md);}
-h4 {font-size: rem($font_size_md);}
+h4 {font-size: rem($font_size_sm);}
+h5 {font-size: rem($font_size_xs);}
+h5 {font-size: rem($font_size_xs);}
 
 p {
     line-height: $second_font_line_height;

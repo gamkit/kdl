@@ -143,6 +143,7 @@
 
 
 .home-needy {
+    .home-needy__wrap {margin-bottom: 56px;}
 
     .home-needy__heading {
         text-align: center;
@@ -174,6 +175,8 @@
 .home-howtohelp {
 
     .home-howtohelp__wrap {
+        display: flex;
+        align-items: center;
         min-height: 100vh;
         background: url('/img/help_bg.jpg') no-repeat center center;
         background-size: cover;
@@ -183,8 +186,66 @@
     .home-howtohelp__heading {
         color: #fff;
         text-align: center;
+        align-self: flex-start;
+    }
+
+    .home-howtohelp__help-list {
+        align-self: center;
+    }
+
+    .help-list__item {
+        width: size(6);
+        
+
+        &:first-child {
+            align-self: flex-start;
+            margin-bottom: 32px;
+        }
+        &:last-child {
+            align-self: flex-end;
+            margin-top: 32px;
+        }
+    }
+
+    
+}
+
+// -------------------------------------------------
+
+
+.home-partners {
+    .home-partners__wrap {
+        margin-top: 56px;
+    }
+
+    .home-partners__partners-list {
+        margin: 0;
+    }
+   
+
+    .home-partners__partners-list {
+        padding-top: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.07);
+    }
+
+    .partners-list__item {
+        padding: 15px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,57 @@
+.help-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .help-item {
+        overflow: hidden;
+        position: relative;
+        border: 4px solid #FFFFFF;
+        box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.07);
+        border-radius: 15px;
+
+        &:first-child .help-item__link:before {
+            background-color: rgba($color: #CC4B4C, $alpha: 0.7);
+        }
+        &:last-child .help-item__link:before {
+            background-color: rgba($color: #2AC37A, $alpha: 0.7);
+        }
+    }
+
+    .help-item__link {
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            transition: opacity 0.3s;
+            
+        }
+
+        &:hover{
+            &::before {opacity: 0.6;}
+            .help-item__title {
+                letter-spacing : 5px;
+            }
+        }
+
+    }
+
+    .help-item__preview {
+        
+    }
+
+    .help-item__title {
+        @include abs-center;
+        text-align: center;
+        font: rem($font_size_md) $second_font_family;
+        height: rem($font_size_md);
+        color: #fff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        z-index: 1;
+        transition: letter-spacing 0.3s ease-in-out;
+    }
+}

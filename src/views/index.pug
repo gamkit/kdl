@@ -38,7 +38,7 @@ block content
          .home-needy__wrap
             .container
                h3.home-needy__heading Им нужна ваша помощь
-               ul.owl-carousel.needy-list__owl-carousel.home-needy__needy-list.needy-list
+               ul.home-needy__needy-list.owl-carousel.needy-list__owl-carousel.needy-list
                   //- 
                   li.item.needy-list__item.needy-item
                      .needy-item__preview
@@ -102,17 +102,60 @@ block content
       //- SECTION
       section.home-howtohelp
          .home-howtohelp__wrap
-            h2.home-howtohelp__heading Как помочь?
-            ul.home-howtohelp__help-list.help-list.row
-               li.help-list__item.help-item
-                  .help-item__preview
-                     img(src="img/help_item_bg_1.jpg", alt="Делом")
-                  p.help-item__title Делом
-               li.help-list__item.help-item
-                  .help-item__preview
-                     img(src="img/help_item_bg_2.jpg", alt="Деньгами")
-                  p.help-item__title Деньгами
+            .container
+               h2.home-howtohelp__heading Как помочь?
+               ul.home-howtohelp__help-list.help-list
                   
+                  li.help-list__item.help-item
+                     a(href="").help-item__link
+                        .help-item__preview
+                           img(src="img/help_item_bg_1.jpg", alt="Делом").img-responsive
+                        p.help-item__title Делом
+                  
+                  li.help-list__item.help-item
+                     a(href="").help-item__link
+                        .help-item__preview
+                           img(src="img/help_item_bg_2.jpg", alt="Деньгами").img-responsive
+                        p.help-item__title Деньгами
+      
+      //- SECTION
+      section.home-partners
+         .home-partners__wrap
+            .home-partners__inner
+               h3.home-partners__heading Наши партнеры
+               ul.home-partners__partners-list.owl-carousel.partners-list__owl-carousel.partners-list
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+                  li.item.partners-list__item.partner-item
+                     img(src="img/svg/logo.svg", alt="")
+      
+      //- SECTION
+      section.home-news
+         .home-news__wrap
+            .container
+               .home-news__inner
+                  h3.home-news__heading Новости
+                  ul.home-news__news-list.owl-carousel.news-list__owl-carousel.news-list
+                     li.item.news-list__item.news-item
+                        .news-item__preview
+                           img(src="uploads/images/news_item.jpg", alt="")
+                        .news-item__info
+                           h4.news-item__title Знакомство с ментальной арифметикой...
+                           span.news-item__date 23.04.2019
+                           p.news-item__text Наши маленькие подопечные продолжают развивать умственные и творческие способности.
+                           
 
 
 

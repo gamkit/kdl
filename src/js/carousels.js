@@ -16,3 +16,20 @@ $('.needy-list__owl-carousel').owlCarousel({
         },
     }
 })
+
+
+
+$('.partners-list__owl-carousel').owlCarousel({
+    autoplay: true,
+    items: 6,
+    margin: 50,
+ 
+})
+
+
+$('.news-list__owl-carousel').owlCarousel({
+    autoplay: true,
+    items: 3,
+    margin: 30,
+ 
+})
