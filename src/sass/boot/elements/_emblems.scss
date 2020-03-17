@@ -1,0 +1,25 @@
+.svg-logo {
+    width: 58.18px;
+    height: 48px;
+
+    .svg-logo__pic {
+        fill: #ed6a00;
+    }
+
+    .svg-logo__pic-stroke {
+        fill:none;
+        stroke:#ed6a00;
+        stroke-miterlimit:22.925600000000003;
+        stroke-width:0.1797px;
+    }
+
+    .svg-logo__text {
+        fill: #575656;
+    }
+
+    &.svg-logo--theme--white{
+        .svg-logo__pic, .svg-logo__text {fill: #fff !important;}
+        .svg-logo__pic-stroke {stroke: #fff !important;}
+    }
+}
+

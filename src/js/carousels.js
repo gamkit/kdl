@@ -29,7 +29,9 @@ $('.partners-list__owl-carousel').owlCarousel({
 
 $('.news-list__owl-carousel').owlCarousel({
     autoplay: true,
+    nav: true,
     items: 3,
+    navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
     margin: 30,
  
 })

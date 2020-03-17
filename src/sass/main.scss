@@ -148,24 +148,6 @@
     .home-needy__heading {
         text-align: center;
     }
-
-    .needy-list__owl-carousel {
-        .owl-nav {
-            text-align: center;
-            margin-top: 32px;
-        }
-
-        .owl-prev,.owl-next {
-            border: none;
-            outline: none;
-            margin: 0 15px;
-            transition: opacity 0.3s;
-
-            &:hover {
-                opacity: 0.5;
-            }
-        }
-    }
 }
 
 
@@ -191,6 +173,7 @@
 
     .home-howtohelp__help-list {
         align-self: center;
+        justify-content: space-between;
     }
 
     .help-list__item {
@@ -234,6 +217,21 @@
     }
 }
 
+
+// -------------------------------------------------
+
+
+.home-news {
+
+    .home-news__news-link {
+        display: block;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: underline;
+        color: $color_dark;
+    }
+}
 
 
 

@@ -1,7 +1,7 @@
-mixin svg(svg_url, svg_id)
+mixin svg(svg_url, svg_id, svg_class)
   if svg_id
-    svg()&attributes(attributes)
-      use(xlink:href= svg_url + '#' + svg_id)
+    svg(class=svg_class)&attributes(attributes)
+      use(xlink:href= svg_url + '#' + svg_id class=svg_class)
   else
     svg()&attributes(attributes)
       use(xlink:href= svg_url)
@@ -14,3 +14,5 @@ mixin layout(name)
       include ../layouts/_header.pug
     when 'footer'
       include ../layouts/_footer.pug
+    when 'svg-list'
+      include ../layouts/_svg-list.pug

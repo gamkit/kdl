@@ -1,0 +1,17 @@
+.owl-carousel--custom-nav-1 {
+    .owl-nav {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .owl-prev, .owl-next {
+        border: none;
+        outline: none;
+        margin: 0 15px;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}

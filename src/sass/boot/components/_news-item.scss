@@ -1,0 +1,29 @@
+.news-item {
+    background-color: #fff;
+    border: 1px solid rgba(51, 58, 60, 0.48);
+    border-radius: 6px;
+    overflow: hidden;
+    
+
+    .news-item__info {
+        padding: 0 15px;
+    }
+
+    .news-item__title {
+        font: rem($font_size_sm) $base_font_family;
+        font-style: normal;
+        font-weight: bold;
+        text-align: left;
+        margin: 16px 0;
+        color: $color_blue;
+    }
+
+    .news-item__date {
+        opacity: 0.5;
+        color: $color_dark;
+    }
+
+    .news-item__text {
+        color: $color_dark;
+    }
+}
