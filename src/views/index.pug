@@ -2,7 +2,7 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   .page.page--home
+   main.page.page--home
       +layout('header')
 
       //- SECTION
@@ -102,6 +102,21 @@ block content
       //- SECTION
       section.home-howtohelp
          .home-howtohelp__wrap
+            h2.home-howtohelp__heading Как помочь?
+            ul.home-howtohelp__help-list.help-list.row
+               li.help-list__item.help-item
+                  .help-item__preview
+                     img(src="img/help_item_bg_1.jpg", alt="Делом")
+                  p.help-item__title Делом
+               li.help-list__item.help-item
+                  .help-item__preview
+                     img(src="img/help_item_bg_2.jpg", alt="Деньгами")
+                  p.help-item__title Деньгами
+                  
+
+
+
+
 
 
                   
