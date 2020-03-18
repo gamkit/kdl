@@ -2,9 +2,50 @@
     .footer__wrap {
         margin-top: 56*2px;
         background-color: $color_dark;
+        overflow: hidden;
     }
 
     .footer__logo {
-        
+        text-align: center;
+        margin-top: 32px;
     }
+
+    .footer__nav {
+        width: size(8);
+        justify-content: space-between;
+        margin: 32px auto;
+        .nav__item {
+            margin: 0 15px;
+        }
+    }
+
+    .footer__info-box {
+        background-color: rgba($color: #000, $alpha: 0.12);
+        border-top: 1px solid rgba($color: #fff, $alpha: 0.26);
+        border-bottom: 1px solid rgba($color: #fff, $alpha: 0.26);
+        padding: 45px 0;
+        text-align: center;
+    }
+
+    .base-contacts__list {
+        margin: 32px 0;
+        justify-content: center;
+
+        .base-contacts__item {
+            color: #fff;
+            font-style: normal;
+            font-weight: 300;
+            margin: 0 15px;
+            p {
+                color: rgba($color: #fff, $alpha: 0.5);
+                margin: 0;
+            }
+            b {
+                font-weight: bold;
+                color: rgba($color: #fff, $alpha: 1);
+            }
+        }
+    }
+
+     
 }

@@ -3,7 +3,7 @@ footer.footer
         .container
             .footer__logo
                 +svg('', 'svg_logo', "svg-logo svg-logo--theme--white")
-            nav.footer__nav.nav.nav--theme--white
+            nav.footer__nav.nav.nav--theme--white.row
                 li.nav__item
                     a(href="index.html") Главная
                 li.nav__item
@@ -14,3 +14,31 @@ footer.footer
                     a(href="volunteer.html") Волонтерство
                 li.nav__item
                     a(href="documents.html") Документы
+        
+        .footer__info-box
+            .container
+                a(href="").footer__btn-donut.btn.btn-donut.btn--theme--orange.btn--shadow--black
+                    span Помочь сейчас
+                    i.btn__glyph.glyph-kid
+                .footer__base-contacts.base-contacts
+                    ul.base-contacts__list.row
+                        li.base-contacts__item.base-contacts__item
+                            p <b>Телефон:</b> 8 (960) 435-55-22
+                        li.base-contacts__item.base-contacts__item
+                            p <b>WhatsApp:</b> 8 (928) 731-26-02
+                        li.base-contacts__item.base-contacts__item
+                            p <b>E-Mail:</b> dobro.kdl@gmail.com
+                ul.header__social-links.social-links.social-links--theme--blue.row
+                    li.social-links__item
+                        a(href="")
+                            i.glyph-social-vk
+                    li.social-links__item
+                        a(href="")
+                            i.glyph-social-fb
+                    li.social-links__item
+                        a(href="")
+                            i.glyph-social-tg
+
+
+
+
