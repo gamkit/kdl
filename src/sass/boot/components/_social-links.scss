@@ -4,15 +4,30 @@
         &:last-child {margin-right: 0;}
         a {
             display: inline-block;
-            height: 24px;
-            width: 24px;
             transition: 0.3s;
             
         }
     }
 
+    &.social-links--size--sm {
+        align-items: center;
+        .social-links__item {
+            margin: 0 15px;
+            a {
+                font-size: rem($font_size_sm);
+            }
+
+            .glyph-social-vk {
+                font-size: rem($font_size_md)
+            }
+        }
+    }
+
     &.social-links--theme--white {
+        
         .social-links__item a {
+            height: 24px;
+            width: 24px;
             border-radius: 25px;
             font-size: 10px;
             padding-top: 3px;
@@ -27,6 +42,19 @@
             }
             
         }
+    }
+
+    &.social-links--theme--blue {
+        .social-links__item a {
+            color: $color_blue;
+            transition: color 0.6s;
+
+            &:hover {
+                color: $color_orange;
+            }
+        }
+
+        
     }
 }
 

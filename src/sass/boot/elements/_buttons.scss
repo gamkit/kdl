@@ -95,14 +95,34 @@
         }
     }
 
+    @include mq("sm_max") {
+        &.btn-donut--sm--icon {
+            width: 42px;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            overflow: hidden;
+            border-radius: 21px 0 21px 21px;
+
+            span {display: none !important;}
+        }
+    }
+
+
+
+    // -----------------------------------
+
     &.btn-link {
         text-decoration: none;
     }
+
+    // -----------------------------------
 
     &.btn-hamburger {
         color: $color_dark;
         padding: 0;
     }
+
+    // -----------------------------------
 
     &.btn-submit {
         
@@ -134,14 +154,3 @@
 ******************************************************************
 */
 
-@include mq("sm_max") {
-    .btn-donut {
-        width: 42px;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        overflow: hidden;
-        border-radius: 21px 0 21px 21px;
-
-        span {display: none !important;}
-    }
-}

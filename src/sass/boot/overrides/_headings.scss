@@ -1,0 +1,8 @@
+@include mq("sm_max") {
+    h1 {
+        font-size: rem($font_size_md);
+    }
+    h2 {
+        font-size: rem($font_size_md);
+    }
+}

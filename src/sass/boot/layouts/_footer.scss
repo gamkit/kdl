@@ -28,7 +28,8 @@
     }
 
     .base-contacts__list {
-        margin: 32px 0;
+        margin: 42px 0;
+        margin-bottom: 32px;
         justify-content: center;
 
         .base-contacts__item {
@@ -47,5 +48,48 @@
         }
     }
 
-     
+
+    .footer__social-links {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .footer__copyright {
+        color: rgba($color: #fff, $alpha: 0.37);
+        text-align: center;
+        font-style: normal;
+        font-weight: 300;
+        margin: rem($font_size_sm);
+    }
+    
+}
+
+
+@include mq("md_max") {
+    .footer {
+
+        .footer__nav {
+            flex-direction: column;
+            text-align: center;
+
+            .nav__item {
+                margin-bottom: rem($font_size_sm);
+            }
+        }
+
+        
+    }
+}
+
+
+@include mq("sm_max") {
+    .footer {
+        .base-contacts__list {
+            flex-direction: column;
+        }
+
+        .base-contacts__item {
+            margin-bottom: rem($font_size_sm) !important;
+        }
+    }
 }
