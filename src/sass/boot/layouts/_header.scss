@@ -1,5 +1,9 @@
 .header {
     .header__wrap {
+        height: 120px;
+    }
+
+    .header__inner {
         position: fixed;
         width: 100%;
         z-index: $z_header;
