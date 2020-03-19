@@ -7,7 +7,9 @@
 ******************************************************************
 */
 
-
+.page {
+    min-height: 100vh;
+}
 
 
 
@@ -19,7 +21,7 @@
 
 
 /*
-* Home Page
+* HOME PAGE
 ******************************************************************
 */
 
@@ -206,6 +208,7 @@
             padding-bottom: 32px;
         }
     }
+    
 }
 
 
@@ -312,6 +315,49 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* ABOUT PAGE
+******************************************************************
+*/
+
+.about-desc {
+
+    .about-desc__goals-list {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .goals-list__item {
+        width: size(4);
+        margin: 0 $gutter;
+        margin-bottom: 32px;
+    }
+}
+
+@include mq("sm_max") {
+    .about-desc {
+        .goals-list__item {
+            width: size(6);
+        }
+    }
+}
 
 
 

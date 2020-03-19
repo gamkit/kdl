@@ -33,8 +33,11 @@
         }
 
         .needy-item__needed {
-            margin-right: auto;
-          
+            margin-right: auto; 
+        }
+
+        .needy-item__icon-done {
+            display: block;
         }
 
         
@@ -67,6 +70,12 @@
     margin: 0 -15px;
     padding: 0 15px;
     justify-content: space-around;
+}
+
+.needy-item__icon-done {
+    display: none;
+    font-size: rem($font_size_sm);
+    color: green;
 }
 
 .needy-item__bar {

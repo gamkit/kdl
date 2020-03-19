@@ -95,6 +95,7 @@
     }
 
     @include mq("sm_max") {
+        .header__wrap {height: 64px;}
         .header__top {display: none;}
         .header__bottom {padding: 10px 15px;}
         .header__phone-numbers {display: none;}

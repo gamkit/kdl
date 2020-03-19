@@ -1,0 +1,7 @@
+.goal-item {
+    text-align: center;
+    .goal-item__title {
+        font: rem($base_font_size) $second_font_family;
+        line-height: 130%;
+    }
+}
