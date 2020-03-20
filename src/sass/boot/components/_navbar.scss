@@ -1,0 +1,20 @@
+.navbar {
+  
+    .navbar-item {
+        font-family: $second_font_family;
+        font-style: normal;
+        font-weight: bold;
+
+        a {
+            color: inherit;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color_orange;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    &.navbar--theme--white {color: #fff;}
+}

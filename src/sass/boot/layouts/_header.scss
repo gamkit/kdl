@@ -17,9 +17,23 @@
         color: #fff;
     }
 
-    .header__nav {
+    .header__navbar {
         width: size(9);
     }
+
+    .header__navbar-list {
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .header__navbar-item {
+        
+        margin-right: auto;
+    }
+
+
+
 
     .header__r-links {
         width: size(3);
@@ -64,26 +78,33 @@
     }
 
     
+
+    
     @include mq("lg_max") {
-        .header__nav {
+        .header__navbar {
             width: size(8);
-        } 
+        }
+
+        .header__navbar-item {
+            font-size: rem(14px);
+        }
+
         .header__r-links {
             width: size(4);
         }
-        .header__nav .nav__item, .header__help-link {
+        .header__help-link {
             font-size: rem(14px);
         }
     }
 
-    @include mq("md") {
-        .header__nav {
+    @include mq("md_max") {
+        .header__navbar {
             width: size(10);
         } 
         .header__r-links {
             width: size(3);
         }
-        .header__nav .nav__item {
+        .header__navbar-item {
             font-size: rem(14px);
         }
         .header__social-links {

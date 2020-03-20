@@ -10,13 +10,15 @@
         margin-top: 32px;
     }
 
-    .footer__nav {
+    .footer__navbar {
         width: size(8);
         justify-content: space-between;
         margin: 32px auto;
-        .nav__item {
-            margin: 0 15px;
-        }
+        
+    }
+
+    .footer__navbar-item {
+        margin: 0 15px;
     }
 
     .footer__info-box {
@@ -68,11 +70,11 @@
 @include mq("md_max") {
     .footer {
 
-        .footer__nav {
+        .footer__navbar {
             flex-direction: column;
             text-align: center;
 
-            .nav__item {
+            .navbar-item {
                 margin-bottom: rem($font_size_sm);
             }
         }

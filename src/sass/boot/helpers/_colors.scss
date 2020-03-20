@@ -1,11 +1,40 @@
-.txt--theme--dark {
+/*
+******************************************************************
+* Text Color
+******************************************************************
+*/
+.txt-color--dark {
     color: $color_text_default;
 }
 
-.txt--theme--white {
+.txt-color--white {
     color: #fff;
 }
 
-.txt--theme--white {
+.txt-color--white {
     color: #fff;
 }
+
+
+
+
+
+
+
+
+/*
+******************************************************************
+* Background settings
+******************************************************************
+*/
+
+.bg-gradient--blue {
+    color: #fff;
+    background: $gradient_blue;
+}
+
+.bg-gradient--orange {
+    color: #fff;
+    background: $gradient_orange;
+}
+

@@ -35,13 +35,15 @@ $color_blue                     : #0191B6;
 $color_light_blue               : #37BBCA;
 
 
-$color_background               : #F8F5F3;
+$gradient_blue                  : linear-gradient(99.32deg, $color_light_blue 0%, $color_blue 100%), #2A3032;
+$gradient_orange                : linear-gradient(99.32deg, $color_orange 0%, #EF5D1E 100%), #2A3032;
 
+
+$color_background               : #F8F5F3;
 $color_text_default             : $color_dark;
 $color_text_select              : $color_blue;
 $color_link                     : $color_light_blue;
 
-$color_gradient_1               : linear-gradient(45deg, $color_blue  0%, $color_light_blue 100%);
 
 
 

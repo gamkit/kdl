@@ -1,18 +1,18 @@
 @import 'social-links';
-@import 'nav';
+@import 'navbar';
 // @import 'tabs';
 // @import 'form';
-// @import 'photo-gallery';
-// @import 'video-gallery';
+// @import 'gallery'; gallery--type--video
+// @import 'gallery'; gallery--type--video
 @import 'phone-numbers';
 @import 'needy-item';
 @import 'help-item';
 @import 'news-item';
 @import 'goal-item';
 
-// @import 'team-member-item'; // team-member-item--status--volunteer
+@import 'member-item'; // team-member-item--status--volunteer
 // @import 'breadcumbs';
-// @import 'founder-item';
+// @import 'founder-item'; // founder-item--status--founder
 // @import 'media-news-item';
 // @import 'foundation-project-item';
 // @import 'document-link-item';
