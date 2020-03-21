@@ -9,7 +9,9 @@
 
 .page {
     min-height: 100vh;
+    margin-bottom: 56*2px;
 }
+
 
 
 
@@ -390,7 +392,7 @@
 
 
 /*
-* ABOUT TEAM
+* TEAM PAGE
 ******************************************************************
 */
 
@@ -406,10 +408,7 @@
         margin: $gutter;
 
         &:hover {
-            .member-item__photo:after {
-                opacity: 1;
-     
-            }
+            .member-item__photo:after { opacity: 1; }
 
             .member-item__contacts {
                 opacity: 1;
@@ -455,6 +454,103 @@
          
     }
 }
+// -------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* FOUNDERS PAGE
+******************************************************************
+*/
+
+.founders-members {
+
+    .founders-members__founders-list {
+        justify-content: center;
+    }
+
+    .founders-list__item {
+        width: size(4);
+        margin: $gutter;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* FOUNDERS PAGE
+******************************************************************
+*/
+
+.trustees-members {
+
+    .trustees-members__trustees-list {
+        justify-content: center;
+    }
+
+    .trustees-list__item {
+        width: size(4);
+        margin: $gutter;
+    }
+}
+
+
 
 
 

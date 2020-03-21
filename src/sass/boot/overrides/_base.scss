@@ -3,3 +3,42 @@
         height: auto;
     }
 }
+ 
+
+.page--about, .page--team, .page--trustees {
+    margin-bottom: 0 !important;
+
+
+    .action-block {
+        margin-top: 56*2px;
+    }
+    .action-block {
+        text-align: center;
+        overflow: hidden;
+
+
+        .action-block__question { margin-bottom: rem($font_size_md); }
+        .action-block__btn { margin-bottom: rem($font_size_lg); }
+
+    }
+
+}
+
+
+
+
+.page--founders, .page--trustees {
+
+    @include mq("md") {
+        .founders-list__item {
+            width: size(6);
+        }
+    }
+
+    @include mq("sm_max") {
+        .founders-list__item {
+            width: size(12);
+        }
+    }
+}
+

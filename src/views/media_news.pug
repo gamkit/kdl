@@ -1,0 +1,25 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+   main.page.page--medianews
+    
+        +layout('header')
+      
+        h3 СМИ о нас
+
+        //- SECTION
+        section.medianews-list
+            .medianews-list__wrap
+                .container 
+                    ul.team-members__list.members-list.row
+                        //- 
+                        li.member-item.members-list__item
+                            a(href="")
+                                .member-item__preivew
+                                    img(src="", alt="")
+                        
+                        
+        
+
+        

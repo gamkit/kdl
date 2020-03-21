@@ -2,15 +2,21 @@
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.14);
     border: 1px solid rgba(89, 94, 104, 0.35);
 
+    &.member-item--status--volunteer {
+        .member-item__contacts {
+            color: #fff;
+            background-color: rgba($color: #000, $alpha: 0.56);
+        }
+    }
     
     
     .member-item__contacts {
         background-color: rgba($color: #fff, $alpha: 0.8);
         border: 1px solid #595E68;
         opacity: 0;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
 
     }
 
