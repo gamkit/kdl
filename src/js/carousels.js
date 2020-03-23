@@ -66,7 +66,8 @@ $('.news-list__owl-carousel').owlCarousel({
 
 $('.project-list__owl-carousel').owlCarousel({
     items: 1,
-    navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
+    navText: ['<i class="icon icon-arr icon-arr--theme--white-dark glyph-ar-left"></i>', '<i class="icon icon-arr icon-arr--theme--white-dark glyph-ar-right"></i>'],
     nav: true,
+    margin: 30,
     dots: true,
 })

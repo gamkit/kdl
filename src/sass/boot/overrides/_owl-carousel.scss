@@ -22,7 +22,7 @@
 
     .owl-prev, .owl-next {
         position: absolute;
-        top: 50%;
+        top: 40%;
         border: none;
         outline: none;
         transition: opacity 0.3s;
@@ -33,11 +33,28 @@
     }
 
     .owl-prev {
-        left: -40px;
+        left: -10%;
     }
     .owl-next {
-        right: -40px;
+        right: -10%;
     }
     
+
+    .owl-dots {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .owl-dot {
+        width: 13px;
+        height: 13px;
+        margin: 0 6px;
+        background-color: $color_dark !important;
+        border-radius: 13px;
+
+        &.active {
+            background-color: $color_blue !important;
+        }
+    }
 }
 

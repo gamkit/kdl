@@ -28,7 +28,7 @@
         .tab-item {
             border-color: $color_blue;
 
-            &.on {
+            &.tab-item--active {
                 color: #fff;
                 background-color: $color_blue;
             }

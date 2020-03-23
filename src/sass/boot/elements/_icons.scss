@@ -1,4 +1,22 @@
+.icon {
+    display: inline-block;
 
+    &.icon-arr {
+        display: flex;
+        border: 1px solid $color_dark;
+        width: 42px;
+        height: 42px;
+        border-radius: 42px;
+        justify-content: center;
+        align-items: center;
+
+        &.icon-arr--theme--white-dark {
+            color: $color_dark;
+            border: 1px solid $color_dark;
+            background-color: #fff;
+        }
+    }
+}
 
 
 
