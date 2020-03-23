@@ -650,7 +650,7 @@
         margin: auto;
     }
     
-    .projects-box__tabs {
+    .projects-box__tabs-list {
         width: size(8);
         margin: 56px auto;
         justify-content: space-between;
@@ -660,18 +660,12 @@
         width: 50%;
     }
 
-    .project-list {
-        display: none;
-
-        &.project-list--active {
-            display: block;
-        }
-    }
+    
 }
 
 @include mq("sm_max") {
      
-    .projects-box__tabs {
+    .projects-box__tabs-list {
         width: size(12) !important;
     }
 

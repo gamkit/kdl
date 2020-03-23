@@ -21,47 +21,49 @@ block content
             .projects-box__wrap
                 hr.projects-box__line
                 .container
-                    ul.tabs.tabs--theme--blue.projects-box__tabs.row
-                        li(data-tab-index="0").projects-box__tab-item.tab-item.tab-item--active Программы
-                        li(data-tab-index="1").projects-box__tab-item.tab-item Проекты
-                    .projects-box__carousels-list
-                        //- 
-                        ul(data-tab-index="0").projects-box__project-list.project-list.project-list--active.owl-carousel.project-list__owl-carousel.owl-carousel--custom-nav-2
-                            li.project-item
-                                .project-item__preview
-                                    img(src="uploads/images/project_item.jpg", alt="")
-                                .project-item__desc
-                                    h4.project-item__title Программа А
-                                    p.project-item__date Дата запуска: <b>23.04.2019</b>
-                                    p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                                    
-                            li.project-item
-                                .project-item__preview
-                                    img(src="uploads/images/project_item.jpg", alt="")
-                                .project-item__desc
-                                    h4.project-item__title Программа B
-                                    p.project-item__date Дата запуска: <b>23.04.2019</b>
-                                    p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    .tabs.tabs--theme--blue.projects-box__tabs
+                        ul.projects-box__tabs-list.tabs__list.row
+                            li(data-tab-index="0").projects-box__tab-item.tab-item.tab-item--active Программы
+                            li(data-tab-index="1").projects-box__tab-item.tab-item Проекты
                         
-                        //- 
-                        ul(data-tab-index="1").projects-box__project-list.project-list.owl-carousel.project-list__owl-carousel.owl-carousel--custom-nav-2
-                            li.project-item
-                                .project-item__preview
-                                    img(src="uploads/images/project_item.jpg", alt="")
-                                .project-item__desc
-                                    h4.project-item__title Проект А
-                                    p.project-item__date Дата запуска: <b>23.04.2019</b>
-                                    p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-                                    
-                            li.project-item
-                                .project-item__preview
-                                    img(src="uploads/images/project_item.jpg", alt="")
-                                .project-item__desc
-                                    h4.project-item__title Проект B
-                                    p.project-item__date Дата запуска: <b>23.04.2019</b>
-                                    p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
-           
-                                    
+                        .tabs__content.projects-box__carousels-list
+                            //- 
+                            ul(data-tab-index="0").tab-content-item.tab-content-item--active.projects-box__project-list.project-list.project-list--active.owl-carousel.project-list__owl-carousel.owl-carousel--custom-nav-2
+                                li.project-item
+                                    .project-item__preview
+                                        img(src="uploads/images/project_item.jpg", alt="")
+                                    .project-item__desc
+                                        h4.project-item__title Программа А
+                                        p.project-item__date Дата запуска: <b>23.04.2019</b>
+                                        p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                                        
+                                li.project-item
+                                    .project-item__preview
+                                        img(src="uploads/images/project_item.jpg", alt="")
+                                    .project-item__desc
+                                        h4.project-item__title Программа B
+                                        p.project-item__date Дата запуска: <b>23.04.2019</b>
+                                        p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                            
+                            //- 
+                            ul(data-tab-index="1").tab-content-item.projects-box__project-list.project-list.owl-carousel.project-list__owl-carousel.owl-carousel--custom-nav-2
+                                li.project-item
+                                    .project-item__preview
+                                        img(src="uploads/images/project_item.jpg", alt="")
+                                    .project-item__desc
+                                        h4.project-item__title Проект А
+                                        p.project-item__date Дата запуска: <b>23.04.2019</b>
+                                        p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                                        
+                                li.project-item
+                                    .project-item__preview
+                                        img(src="uploads/images/project_item.jpg", alt="")
+                                    .project-item__desc
+                                        h4.project-item__title Проект B
+                                        p.project-item__date Дата запуска: <b>23.04.2019</b>
+                                        p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+            
+                                        
         
         
         

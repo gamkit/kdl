@@ -1,5 +1,8 @@
 .tabs {
     overflow: hidden;
+    .tabs__list {
+        
+    }
 
     .tab-item {
         font: $font_size_sm $second_font_family;
@@ -36,5 +39,12 @@
     }
 
     
+    .tab-content-item {
+        display: none;
+        
+        &.tab-content-item--active {
+            display: block;
+        }
+    }
 }
 
