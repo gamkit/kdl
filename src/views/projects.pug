@@ -1,0 +1,53 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+   main.page.page--projects
+    
+        +layout('header')
+      
+        h3 Программы и проекты
+
+        //- SECTION
+        section.projects-desc
+            .projects-desc__wrap
+                .container
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+
+                    
+
+        //- SECTION
+        section.projects-box
+            .projects-box__wrap
+                hr.projects-box__line
+                .container
+                    ul.tabs.tabs--theme--blue.projects-box__tabs.row
+                        li(data-tab-index="0").projects-box__tab-item.tab-item.on Программы
+                        li(data-tab-index="1").projects-box__tab-item.tab-item Проекты
+                    .projects-box__carousels-list
+                        ul.projects-box__project-list.owl-carousel.project-list__owl-carousel.project-list.owl-carousel--custom-nav-2
+                            li.project-item
+                                .project-item__preview
+                                    img(src="uploads/images/project_item.jpg", alt="")
+                                .project-item__desc
+                                    h4.project-item__title Программа А
+                                    p.project-item__date Дата запуска: <b>23.04.2019</b>
+                                    p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                                    
+                            li.project-item
+                                .project-item__preview
+                                    img(src="uploads/images/project_item.jpg", alt="")
+                                .project-item__desc
+                                    h4.project-item__title Программа А
+                                    p.project-item__date Дата запуска: <b>23.04.2019</b>
+                                    p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+           
+                                    
+        //- SECTION
+        section.projects-action
+            .projects-action__wrap
+                .action-block.projects-action__action-block.bg-gradient--blue
+                    .container
+                        h3.action-block__question Вступай в волонтеры
+                        a(href="").btn.btn--theme--white-to-orange.action-block__btn Вступить
+        

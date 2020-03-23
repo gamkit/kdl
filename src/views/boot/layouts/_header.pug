@@ -3,19 +3,43 @@ header.header
         .header__inner
             .header__top.row
                 nav.header__navbar.navbar
-                    ul.navbar-list.header__navbar-list.row-mg
+                    ul.navbar__list.header__navbar-list.row-mg
                         li.navbar-item.header__navbar-item
                             a(href="index.html") Главная
-                        li.navbar-item.header__navbar-item
+                        li.navbar-item.navbar-item--sub.header__navbar-item
                             a(href="about.html") О нас
-                        li.navbar-item.header__navbar-item
+                            .navbar-item__navbar.navbar
+                                ul.navbar__list.header__navbar-list
+                                    li.navbar-item.header__navbar-item
+                                        a(href="team.html") Команда
+                                    li.navbar-item.header__navbar-item
+                                        a(href="founders.html") Правление
+                                    li.navbar-item.header__navbar-item
+                                        a(href="trustees.html") Попечительный совет
+                                    li.navbar-item.header__navbar-item
+                                        a(href="media_news.html") СМИ о нас
+                        li.navbar-item.header__navbar-item.navbar-item--sub
                             a(href="projects.html") Проекты
+                            .navbar-item__navbar.navbar
+                                ul.navbar__list.header__navbar-list
+                                    li.navbar-item.header__navbar-item
+                                        a(href="team.html") Донорство
+                                    
                         li.navbar-item.header__navbar-item
                             a(href="volunteer.html") Волонтерство
                         li.navbar-item.header__navbar-item
                             a(href="documents.html") Документы
-                        li.navbar-item.header__navbar-item
+                        li.navbar-item.navbar-item--sub.header__navbar-item
                             a(href="reports.html") Отчеты
+                            .navbar-item__navbar.navbar
+                                ul.navbar__list.header__navbar-list
+                                    li.navbar-item.header__navbar-item
+                                        a(href="team.html") Фото и видео
+                                    li.navbar-item.header__navbar-item
+                                        a(href="projects.html") Финансовые отчеты
+                                    li.navbar-item.header__navbar-item
+                                        a(href="projects.html") Годовые отчеты
+                                    
                         li.navbar-item.header__navbar-item
                             a(href="contacts.html") Контакты
                 .header__r-links.row

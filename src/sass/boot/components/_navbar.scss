@@ -14,6 +14,44 @@
                 letter-spacing: 1px;
             }
         }
+
+        &.navbar-item--sub {
+            position: relative;
+
+            .navbar-item__navbar {
+                position: absolute;
+                top: 32px;
+                padding: 15px;
+                border-radius: 0 0 6px 6px;
+                left: 0;
+                max-height: 0;
+                opacity: 0;
+                background-color: rgba($color: $color_dark, $alpha: 0.95);
+                z-index: $z_header + 1;
+                transition: 0.3s;
+            }
+
+            .navbar-item {
+                margin-bottom: rem($base_font_size);
+                &:last-child{margin-bottom: 0;}
+                a {
+                    color: inherit;
+                    transition: 0.3s;
+        
+                    &:hover {
+                        color: $color_orange;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            &:hover {
+                .navbar-item__navbar {
+                    max-height: 420px;
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     &.navbar--theme--white {color: #fff;}

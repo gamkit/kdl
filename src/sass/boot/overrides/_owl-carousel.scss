@@ -14,4 +14,30 @@
             opacity: 0.5;
         }
     }
+    
 }
+
+.owl-carousel--custom-nav-2 {
+    
+
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 50%;
+        border: none;
+        outline: none;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .owl-prev {
+        left: -40px;
+    }
+    .owl-next {
+        right: -40px;
+    }
+    
+}
+

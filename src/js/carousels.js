@@ -41,11 +41,13 @@ $('.partners-list__owl-carousel').owlCarousel({
 })
 
 
+
 $('.news-list__owl-carousel').owlCarousel({
     autoplay: true,
     nav: true,
     items: 3,
     navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
+   
     margin: 30,
     responsive: {
         0: {
@@ -59,4 +61,12 @@ $('.news-list__owl-carousel').owlCarousel({
         },
     }
  
+});
+
+
+$('.project-list__owl-carousel').owlCarousel({
+    items: 1,
+    navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
+    nav: true,
+    dots: true,
 })

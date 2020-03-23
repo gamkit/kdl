@@ -534,6 +534,56 @@
 
 
 /*
+* MEDIANEWS PAGE
+******************************************************************
+*/
+
+.medianews-box {
+
+    .medianews-list__item {
+        width: size(6);
+        margin: $gutter;
+    }
+    
+}
+
+@include mq("sm_max") {
+    .medianews-box {
+        .medianews-list__item {
+            width: size(12);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 * FOUNDERS PAGE
 ******************************************************************
 */
@@ -549,6 +599,98 @@
         margin: $gutter;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* PROJECTS PAGE
+******************************************************************
+*/
+
+.projects-desc {
+    text-align: center;
+}
+
+// -------------------------------------------------
+
+.projects-box {
+    .projects-box__line {
+        border: none;
+        border-top: 1px solid rgba($color: $color_dark, $alpha: 0.1);
+    }
+
+    .projects-box__carousels-list {
+        width: size(8);
+        margin: auto;
+    }
+    
+    .projects-box__tabs {
+        width: size(8);
+        margin: 56px auto;
+        justify-content: space-between;
+    }
+
+    .projects-box__tab-item {
+        width: 50%;
+    }
+}
+
+@include mq("sm_max") {
+     
+    .projects-box__tabs {
+        width: size(12) !important;
+    }
+
+    .projects-box__tab-item {
+        font-size: rem($base_font_size) !important;
+
+        .tab-item__title {
+            font-size: rem($font_size_sm);
+        }
+
+    }
+
+    .projects-box__carousels-list {
+        width: size(12) !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

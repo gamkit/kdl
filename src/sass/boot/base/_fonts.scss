@@ -1,3 +1,42 @@
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('/fonts/Comfortaa/Comfortaa.eot');
+	src: local('Comfortaa'),
+		url('/fonts/Comfortaa/Comfortaa.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Comfortaa/Comfortaa.woff') format('woff'),
+		url('/fonts/Comfortaa/Comfortaa.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('/fonts/Comfortaa/Comfortaa-Bold.eot');
+	src: local('Comfortaa Bold'), local('Comfortaa-Bold'),
+		url('/fonts/Comfortaa/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Comfortaa/Comfortaa-Bold.woff') format('woff'),
+		url('/fonts/Comfortaa/Comfortaa-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('/fonts/Comfortaa/Comfortaa-Light.eot');
+	src: local('Comfortaa Light'), local('Comfortaa-Light'),
+		url('/fonts/Comfortaa/Comfortaa-Light.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Comfortaa/Comfortaa-Light.woff') format('woff'),
+		url('/fonts/Comfortaa/Comfortaa-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+
+
+
+// ICONS FONT
  
 @font-face {
   font-family: 'iconfont';
@@ -10,6 +49,12 @@
   font-style: normal;
   font-display: block;
 }
+
+
+
+
+
+// 
 
 [class^="glyph"], [class*=" glyph"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -68,3 +113,17 @@
 .glyph-check-2:before {
   content: "\e90b";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

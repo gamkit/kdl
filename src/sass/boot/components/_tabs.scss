@@ -1,0 +1,40 @@
+.tabs {
+    overflow: hidden;
+
+    .tab-item {
+        font: $font_size_sm $second_font_family;
+        font-style: normal;
+        font-weight: bold;
+        background-color: #fff;
+        border: 1px solid $color_dark;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+        &:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+    }
+
+    
+    
+    &.tabs--theme--blue {
+        color: $color_blue;
+
+        .tab-item {
+            border-color: $color_blue;
+
+            &.on {
+                color: #fff;
+                background-color: $color_blue;
+            }
+        }
+    }
+
+    
+}
+
