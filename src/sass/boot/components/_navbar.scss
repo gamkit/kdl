@@ -7,6 +7,9 @@
 
         a {
             color: inherit;
+            font-family: $second_font_family;
+            font-style: normal;
+            font-weight: bold;
             transition: 0.3s;
 
             &:hover {

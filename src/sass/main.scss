@@ -407,42 +407,7 @@
         width: size(4);
         margin: $gutter;
 
-        &:hover {
-            .member-item__photo:after { opacity: 1; }
-
-            .member-item__contacts {
-                opacity: 1;
-                bottom: 20px;
-            }
-        }
-
-        .member-item__photo {
-            &::after {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                background-color: rgba($color: $color_dark, $alpha: 0.65);
-                z-index: 0;
-                opacity: 0;
-                transition: opacity 0.6s;
-            }
-        }
-
-
-        .member-item__contacts {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 25px 15px;
-            margin: 0 20px;
-            z-index: 1;
-            transition: bottom 0.3s ease-in-out, opacity 0.3s;
-
-        }
+        
     }
 
 
@@ -663,7 +628,7 @@
     
 }
 
-@include mq("sm_max") {
+@include mq("md_max") {
      
     .projects-box__tabs-list {
         width: size(12) !important;
@@ -675,8 +640,28 @@
         .tab-item__title {
             font-size: rem($font_size_sm);
         }
-
     }
+
+    
+    .projects-box__carousels-list {
+         
+        .project-item {
+            .project-item__preview img {
+                width: auto;
+                max-width: none;
+            }
+
+            .project-item__title {
+                font-size: rem($font_size_sm);
+            }
+
+            .project-item__desc {
+                width: size(12);
+            }
+        }
+    }
+
+    
 
     .projects-box__carousels-list {
         width: size(12) !important;
@@ -685,6 +670,99 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* VOLUNTEERS PAGE
+******************************************************************
+*/
+
+.volunteers-opening {
+    .volunteers-opening__slogan {
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// -------------------------------------------------
+
+.volunteers-desc {
+    .volunteers-desc__pic {
+        width: size(3);
+        margin: $gutter;
+    }
+    
+    .volunteers-desc__paragraph {
+        width: size(9);
+        margin: $gutter;
+        
+    }
+}
+
+@include mq("sm_max") {
+    .volunteers-desc {
+        .volunteers-desc__pic {
+            width: size(12);
+        }
+        
+        .volunteers-desc__paragraph {
+            width: size(12);
+            margin: $gutter;
+        }
+    }
+}
+
+// -------------------------------------------------
+
+
+.volunteers-form {
+
+    .volunteers-form__form {
+        .form__wrap {
+            padding: $gutter * 2;
+        }
+
+        .field-text {
+            margin-bottom: rem($font_size_sm);
+        }
+    }
+
+    .form-group__fields-list {
+        justify-content: space-between;
+    }
+    
+    .form-group__field {
+        width: size(4);
+        margin: auto;
+    }
+}
 
 
 

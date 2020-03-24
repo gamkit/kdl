@@ -38,7 +38,7 @@ $('.partners-list__owl-carousel').owlCarousel({
         },
     }
  
-})
+});
 
 
 
@@ -70,4 +70,13 @@ $('.project-list__owl-carousel').owlCarousel({
     nav: true,
     margin: 30,
     dots: true,
-})
+});
+
+
+$('.members-list__owl-carousel').owlCarousel({
+    autoplay: true,
+    nav: true,
+    items: 3,
+    navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
+    margin: 30,
+});

@@ -1,0 +1,111 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+   main.page.page--volunteers
+    
+        +layout('header')
+      
+        h3 Волонтеры
+
+        //- SECTION
+        section.volunteers-opening
+            .volunteers-opening__wrap
+                .container
+                    .volunteers-opening__slogan
+                        img(src="img/volunteer_slogan.svg", alt="").img-responsive
+        
+
+        //- SECTION
+        section.volunteers-desc
+            .volunteers-desc__wrap
+                .container
+                    .row
+                        .volunteers-desc__pic
+                            img(src="img/volunteer_img_1.jpg", alt="").img-responsive
+                        p.volunteers-desc__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                    .row
+                        p.volunteers-desc__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                        .volunteers-desc__pic
+                            img(src="img/volunteer_img_2.jpg", alt="").img-responsive
+
+
+        //- SECTION
+        section.volunteers-members
+            .volunteers-members__wrap
+                .container
+                    h4 Наши волонтеры
+                    ul.volunteers-members__members-list.owl-carousel.members-list__owl-carousel.members-list.owl-carousel--custom-nav-1
+                        //- 
+                        li.member-item.members-list__item.member-item--status--volunteer
+                            .member-item__photo
+                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
+                            .member-item__contacts
+                                .member-item__name Магомед Магомедов
+                                .member-item__position Менеджер
+                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                        //- 
+                        li.member-item.members-list__item.member-item--status--volunteer
+                            .member-item__photo
+                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
+                            .member-item__contacts
+                                .member-item__name Магомед Магомедов
+                                .member-item__position Менеджер
+                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                        //- 
+                        li.member-item.members-list__item.member-item--status--volunteer
+                            .member-item__photo
+                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
+                            .member-item__contacts
+                                .member-item__name Магомед Магомедов
+                                .member-item__position Менеджер
+                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                        //- 
+                        li.member-item.members-list__item.member-item--status--volunteer
+                            .member-item__photo
+                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
+                            .member-item__contacts
+                                .member-item__name Магомед Магомедов
+                                .member-item__position Менеджер
+                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+
+
+        //- SECTION
+        section.volunteers-form
+            .volunteers-form__wrap
+                .container
+                    h4.txt-color--orange Вступить в наши ряды
+                    form(action="").form.volunteers-form__form
+                        .form__wrap
+                            .form__group.form-group
+                                .form-group__fields-list.row
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Фамилия")
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Имя")
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Отчество")
+                                .form-group__fields-list.row
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Дата рождения")
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Телефон")
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Email")
+                                span.field.field-text
+                                    input(type="text" placeholder="Адрес проживания")
+                                span.field.field-text
+                                    input(type="text" placeholder="Род деятельности")
+                            p.form__title Что именно привлекает Вас в волонтерской деятельности? (отметьте нужное):
+                            .form__group.form-group
+                                label.form-group__field-checkbox
+                                    span.field.field-checkbox.glyph-check-1.field-checkbox--checked
+                                        input(type="checkbox")
+                                    span Получение нового опыта
+
+
+
