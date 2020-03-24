@@ -1,4 +1,4 @@
-import Helper from './helper';
+import Helper from '../helper';
  
 
 const tabsList = document.querySelectorAll('.tabs');

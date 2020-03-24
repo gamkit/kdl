@@ -1,6 +1,7 @@
 import '../sass/main.scss';
 
 
-import './carousels';
-import './tabs';
+import './components/carousels';
+import './components/tabs';
+import './components/checkbox';
 

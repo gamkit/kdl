@@ -59,3 +59,7 @@ li {
 img {
     border-radius: 4px;
 }
+
+label {
+    @include text-select-off;
+}
