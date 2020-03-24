@@ -762,6 +762,11 @@
         width: size(4);
         margin: auto;
     }
+
+    .form-group__checkbox-container {
+        display: block;
+        margin-bottom: rem($font_size_xs);
+    }
 }
 
 

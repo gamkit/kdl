@@ -64,46 +64,60 @@
 
     // * Field-checkbox list
     &.field-checkbox {
-        display: inline-block;
-        position: relative;
-        width: 24px;
-        height: 24px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(255, 255, 255, 0) 100%), rgba(51, 58, 60, 0.11);
-        border: 1px solid rgba(51, 58, 60, 0.4);
-        border-radius: 4px;
-
-        &::before {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 6px;
-            margin: auto;
-            text-align: center;
-            font-size: 10px;
-            left: 0;
-            z-index: 0;
-            opacity: 0;
-            transition: opacity 0.3s;
+        
+        &:after {@include clearfix;}
+        .field-checkbox__title {
+            margin: 0;
         }
 
-        input {
-            position: absolute;
-            left: 0;
-            top: 0;
+        .field-checkbox__checkmark {
+            float: left;
+            margin-right: 15px;
+            position: relative;
+            display: inline-block;
             width: 24px;
             height: 24px;
-            z-index: 1;
-            opacity: 0;
-        }
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.51) 0%, rgba(255, 255, 255, 0) 100%), rgba(51, 58, 60, 0.11);
+            border: 1px solid rgba(51, 58, 60, 0.4);
+            border-radius: 4px;
 
+            &::before {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 6px;
+                color: #fff;
+                margin: auto;
+                text-align: center;
+                font-size: 10px;
+                transform: scale(0.1);
+                left: 0;
+                z-index: 0;
+                opacity: 0;
+                transition: opacity 0.6s, transform 0.3s;
+            }
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                z-index: 1;
+                opacity: 0;
+            }
+        }
+        
 
         &.field-checkbox--checked {
-        border: 1px solid #2AC37A;
-        background: #2AC37A;
-            &::before {
-               
-                opacity: 1;
-                color: #fff;
+            .field-checkbox__checkmark  {
+                border: 1px solid #2AC37A;
+                background: #2AC37A;
+
+                &::before {
+                    opacity: 1;
+                    transform: scale(1);
+                }
             }
             
         }
