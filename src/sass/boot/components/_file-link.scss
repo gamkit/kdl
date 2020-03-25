@@ -1,0 +1,29 @@
+.file-link {
+    
+    &::after {
+        @include clearfix;
+    }
+    .file-link__info {
+        position: relative;
+        margin-right: 20px;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    .file-link__file-size {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 120%;
+        margin: 0;
+        font-size: rem($font_size_xs);;
+    }
+
+    .file-link__title {
+        font-size: rem($font_size_sm);
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: underline;
+        color: rgba($color: $color_dark, $alpha: 0.7);
+    }
+}

@@ -22,13 +22,15 @@
             position: relative;
 
             .navbar-item__navbar {
+                overflow: hidden;
                 position: absolute;
                 top: 32px;
-                padding: 15px;
+                padding: 0;
                 border-radius: 0 0 6px 6px;
                 left: 0;
                 max-height: 0;
-                opacity: 0;
+                height: 0;
+                opacity: 1;
                 background-color: rgba($color: $color_dark, $alpha: 0.95);
                 z-index: $z_header + 1;
                 transition: 0.3s;
@@ -50,6 +52,8 @@
 
             &:hover {
                 .navbar-item__navbar {
+                padding: 15px;
+                height: auto;
                     max-height: 420px;
                     opacity: 1;
                 }

@@ -1,0 +1,74 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+   main.page.page--documents
+    
+        +layout('header')
+      
+        h3 Документы фонда
+
+        //- SECTION
+        section.documents-box
+            .documents-box__wrap
+                .container
+                    ul.documents-box__list.documents-items-list
+                        //-
+                        li.documents-list__link-item 
+                            span.file-link.documents-box__file-link
+                                .file-link__info
+                                    i
+                                        +svg("", "svg-icon-file-pdf")(class="icon icon-file icon-file--type--pdf")
+                                    p.file-link__file-size 2 МБ
+                                a(href="").file-link__title Публичная оферта
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                        //-
+                        li.documents-list__link-item 
+                            span.file-link.documents-box__file-link
+                                .file-link__info
+                                    i
+                                        +svg("", "svg-icon-file-pdf")(class="icon icon-file icon-file--type--pdf")
+                                    p.file-link__file-size 2 МБ
+                                a(href="").file-link__title Устав
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                        //-
+                        li.documents-list__link-item 
+                            span.file-link.documents-box__file-link
+                                .file-link__info
+                                    i
+                                        +svg("", "svg-icon-file-pdf")(class="icon icon-file icon-file--type--pdf")
+                                    p.file-link__file-size 2 МБ
+                                a(href="").file-link__title Протокол
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                        //-
+                        li.documents-list__link-item 
+                            span.file-link.documents-box__file-link
+                                .file-link__info
+                                    i
+                                        +svg("", "svg-icon-file-pdf")(class="icon icon-file icon-file--type--pdf")
+                                    p.file-link__file-size 2 МБ
+                                a(href="").file-link__title Свидетельство о постановке на учет
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                        //-
+                        li.documents-list__link-item 
+                            span.file-link.documents-box__file-link
+                                .file-link__info
+                                    i
+                                        +svg("", "svg-icon-file-pdf")(class="icon icon-file icon-file--type--pdf")
+                                    p.file-link__file-size 2 МБ
+                                a(href="").file-link__title Свительство о гос. регистрации нко
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                        //-
+                        li.documents-list__link-item 
+                            span.file-link.documents-box__file-link
+                                .file-link__info
+                                    i
+                                        +svg("", "svg-icon-file-pdf")(class="icon icon-file icon-file--type--pdf")
+                                    p.file-link__file-size 2 МБ
+                                a(href="").file-link__title Свидетельство о государственной регистрации
+                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+                            
+                            
+            
+
+            

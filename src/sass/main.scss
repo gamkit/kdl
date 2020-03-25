@@ -711,6 +711,15 @@
     }
 }
 
+@include mq("sm_max") {
+    .volunteers-opening {
+        .volunteers-opening__slogan {
+            min-height: 30vh;
+        }
+    }
+    
+}
+
 // -------------------------------------------------
 
 .volunteers-desc {
@@ -768,6 +777,124 @@
         margin-bottom: rem($font_size_xs);
     }
 }
+
+@include mq("sm_max") {
+    .volunteers-form {
+        .form-group__field {
+            width: size(12);
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* DOCUMENTS PAGE
+******************************************************************
+*/
+
+.contacts-opening {
+    .contacts-opening__wrap {
+        text-align: center;
+    }
+}
+
+
+// -------------------------------------------------
+
+.documents-box {
+    .documents-list__link-item {
+        margin-bottom: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* CONTACTS PAGE
+******************************************************************
+*/
+
+
+.contacts-info {
+    .contacts-info__wrap {
+        text-align: left;
+    }
+
+    .contacts-info__title {
+        text-align: left;
+    }
+}
+
+// -------------------------------------------------
+
+.contacts-info__map {
+    border: 1px solid $color_dark;
+    border-radius: 8ox;
+}
+
+
 
 
 
