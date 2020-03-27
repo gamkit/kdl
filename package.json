@@ -52,6 +52,7 @@
   "homepage": "https://github.com/absens-x/kdl#readme",
   "dependencies": {
     "jquery": "^3.4.1",
+    "lightslider": "^1.1.6",
     "normalize.css": "^8.0.1",
     "owl.carousel": "^2.3.4"
   }

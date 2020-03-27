@@ -121,7 +121,7 @@ xsmall - Smartphones Mobiles
 * Generate triangle shape
 ******************************************************************
 */
-@mixin shape_triangle($type, $size, $color) {
+@mixin shape-triangle($type, $size, $color) {
     width: 0px;
     height: 0px;
     

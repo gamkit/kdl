@@ -54,6 +54,24 @@
         box-sizing: border-box;
         box-shadow: 0px 6px 15px rgba(255, 123, 23, 0.31);
     }
+    
+    &.btn--theme--blue {
+        background-color: $color_blue;
+        color: #fff;
+        background: linear-gradient(90deg, #37BBCA 0%, #0191B6 100%), #0191B6;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 6px 15px rgba(255, 123, 23, 0.31);
+
+        &:hover {
+            background: #fff;
+            color: $color_dark;
+            border-color: $color_dark;
+        }
+    }
+
+
+
 
     &.btn--shadow--black {
         box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
