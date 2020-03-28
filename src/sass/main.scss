@@ -615,32 +615,14 @@
         margin: auto;
     }
     
-    .projects-box__tabs-list {
-        width: size(8);
-        margin: 56px auto;
-        justify-content: space-between;
-    }
-
-    .projects-box__tab-item {
-        width: 50%;
-    }
+     
 
     
 }
 
 @include mq("md_max") {
      
-    .projects-box__tabs-list {
-        width: size(12) !important;
-    }
-
-    .projects-box__tab-item {
-        font-size: rem($base_font_size) !important;
-
-        .tab-item__title {
-            font-size: rem($font_size_sm);
-        }
-    }
+    
 
     
     .projects-box__carousels-list {
@@ -893,6 +875,125 @@
     border: 1px solid $color_dark;
     border-radius: 8ox;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* FINANCIAL PAGE
+******************************************************************
+*/
+
+.financial-reports-years {
+    .financial-reports-years__item {
+        width: size(4);
+        margin: $gutter;
+    }
+
+}
+
+@include mq("sm_max") {
+
+    .financial-reports-years {
+
+        .financial-reports-years__item {
+            width: size(6);
+        }
+
+        .financial-report-item__year {
+            font-size: rem($font_size_sm);
+        }
+    }
+}
+
+
+// -------------------------------------------------
+
+.financial-reports-months {
+
+    .financial-reports-months__wrap {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: $z_header + 1;
+    }
+
+
+    .financial-reports-months__list {
+        align-items: center;
+        justify-content: stretch;
+        margin: 0;
+        height: 100%;
+    }
+
+
+    .financial-reports-months__item {
+        width: size(4, 0);
+        box-shadow: none;
+        border-radius: 0;
+        align-self: stretch;
+    }
+
+    .financial-reports-months__btn-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+}
+
+
+@include mq("sm_max") {
+
+    .financial-reports-months {
+
+        .financial-reports-months__item {
+            width: size(6, 0);
+        }
+
+        .financial-report-item__link {
+            font-size: rem($base_font_size);
+        }
+
+    }
+}
+
+
 
 
 

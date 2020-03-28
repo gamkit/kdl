@@ -8,7 +8,7 @@
         @return calc(100% / 12 * #{$cols} - #{$gutter * 2});
     }
     @else {
-        @return calc(100% / 12 * #{$cols} -  #{$margin});
+        @return calc(100% / 12 * #{$cols} -  #{$margin}px);
     }
 }
 

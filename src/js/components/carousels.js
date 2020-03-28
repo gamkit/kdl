@@ -88,4 +88,15 @@ $('.gallery-reports__owl-carousel').owlCarousel({
     items: 3,
     navText: ['<i class="icon icon-arr icon-arr--theme--white-dark glyph-ar-left"></i>', '<i class="icon icon-arr icon-arr--theme--white-dark glyph-ar-right"></i>'],
     margin: 30,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        768: {
+            items: 2
+        },
+        992: {
+            items: 3
+        },
+    }
 });

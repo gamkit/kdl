@@ -4,8 +4,10 @@
     }
 }
  
+// -----------------------------------------------------
 
-.page--about, .page--team, .page--trustees, .page--projects {
+
+.page--about, .page--team, .page--trustees, .page--projects, .page--financial-reports {
     margin-bottom: 0 !important;
 
 
@@ -24,6 +26,7 @@
 
 }
 
+// -----------------------------------------------------
 
 
 
@@ -41,6 +44,9 @@
         }
     }
 }
+
+
+// -----------------------------------------------------
 
 .page--team,
 .page--volunteers
@@ -87,3 +93,33 @@
         }
     }
  }
+
+// -----------------------------------------------------
+
+
+.page--projects, .page--financial-reports {
+
+    .tabs {
+        .tabs__list {
+            width: size(8);
+            margin: 56px auto;
+            justify-content: space-between;
+        }
+
+        .tab-item {
+            width: 50%;
+        }
+    }
+
+}
+
+@include mq("md_max") {
+     
+    .tabs__list {
+        width: size(12) !important;
+    }
+
+    .tab-item {
+        font-size: rem($base_font_size) !important;
+    }
+}
