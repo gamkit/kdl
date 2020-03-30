@@ -8,7 +8,7 @@ const tabsList = document.querySelectorAll('.tabs');
         let currentTab = e.target;
 
         if (currentTab.classList.contains('tab-item')) {
-            if(Helper.elementExists(currentTab)) {}
+            if(!Helper.elementExists(currentTab)) {return;}
             let tabItems = tabs.querySelectorAll('.tab-item');
             let tabContentItems = tabs.querySelectorAll('.tab-content-item');
 

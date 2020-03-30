@@ -751,7 +751,8 @@
     
     .form-group__field {
         width: size(4);
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .form-group__checkbox-container {
@@ -876,6 +877,46 @@
     border-radius: 8ox;
 }
 
+// -------------------------------------------------
+
+.contacts-form {
+
+    
+        .form__wrap {
+            padding: $gutter * 2;
+        }
+
+        .field-text, .field-textarea {
+            margin-bottom: rem($font_size_sm);
+        }
+
+        .form-group__fields-list {
+            justify-content: space-between;
+        }
+        
+        .form-group__field {
+            width: size(6);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .form-group__checkbox-container {
+            display: block;
+            margin-bottom: rem($font_size_xs);
+        }
+    
+
+    
+}
+
+@include mq("sm_max") {
+    .contacts-form {
+        .form-group__field {
+            width: size(12);
+        }
+    }
+    
+}
 
 
 

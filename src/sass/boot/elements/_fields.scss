@@ -25,7 +25,7 @@
 
         
         input {
-            display: block;
+            display: inherit;
             width: 100%;
             background: rgba(51, 58, 60, 0.04);
             border: 1px solid rgba($color: $color_dark, $alpha: 0.4);
@@ -46,6 +46,31 @@
 
 
 
+/*
+******************************************************************
+*  FIELD-TEXTAREA settings
+******************************************************************
+*/    
+
+    &.field-textarea {
+        display: block;
+
+        textarea {
+            display: inherit;
+            width: 100%;
+            background: rgba(51, 58, 60, 0.04);
+            border: 1px solid rgba($color: $color_dark, $alpha: 0.4);
+            border-radius: 4px;
+            padding: 15px;
+            transition: 0.3s;
+
+            &:focus {
+                outline: none;
+                background-color: #fff;
+                border-color: rgba($color: $color_dark, $alpha: 0.8);
+            }
+        }
+    }
 
 
 

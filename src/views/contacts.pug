@@ -14,7 +14,7 @@ block content
                 .container
                     .contacts-opening__desc
                         h1 Клуб Добрых Людей (КДЛ)
-                        p Благотворительный фон социальной помощи и поддержки граждан
+                        p Благотворительный фонд социальной помощи и поддержки граждан
                     
         //- SECTION
         section.contacts-info
@@ -42,22 +42,25 @@ block content
                         p ПАО "Сбербанк"
                         p <b>к/с:</b> 30101810907020000615 
 
-                    .contacts-info__item
-                        h4.contacts-info__title.txt-color--orange Остались вопросы? Напишите нам
-                        form(action="").form.contacts-info__form
-                            .form__wrap
-                                .form__group.form-group
-                                    .form-group__fields-list.row
-                                        span.field.field-text
-                                            input(type="text" placeholder="Имя")
-                                        span.field.field-text
-                                            input(type="text" placeholder="Фамилия")
-                                    .form-group__fields-list.row
-                                        span.field.field-text
-                                            input(type="text" placeholder="Телефон")
-                                        span.field.field-text
-                                            input(type="text" placeholder="Email")
-
+        section.contacts-form
+            .contacts-form__wrap
+                .container
+                    h4.contacts-form__title.txt-color--orange Остались вопросы? Напишите нам
+                    form(action="").form.contacts-form__form
+                        .form__wrap
+                            .form__group.form-group
+                                .form-group__fields-list.row
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Имя")
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Фамилия")
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="Телефон")
+                                    span.field.field-text.form-group__field
+                                        input(type="text" placeholder="E-mail")
+                            span.field.field-textarea
+                                textarea(name="", cols="30", rows="10" placeholder="Сообщение")
+                            button(type="submit").btn.btn--theme--orange Отправить     
 
 
  
