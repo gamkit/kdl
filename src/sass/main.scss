@@ -414,9 +414,21 @@
      
 }
 
+@include mq("md_max") {
+    .team-members  {
+        .members-list__item {
+            width: size(6);
+        }
+    }
+    
+}
+
+
 @include mq("sm_max") {
-    .team-members {
-         
+    .team-members  {
+        .members-list__item {
+            width: size(12);
+        }
     }
 }
 // -------------------------------------------------
@@ -1037,6 +1049,71 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* NEWS PAGE
+******************************************************************
+*/
+
+.news-box {
+
+    .news-list__item {
+        width: size(4);
+        margin: $gutter;
+    }
+}
+
+@include mq("lg_max") {
+
+    .news-box {
+
+        .news-list__item {
+            width: size(6);
+          
+        }
+    }
+}
+
+@include mq("sm_max") {
+
+    .news-box {
+
+        .news-list__item {
+            width: size(12);
+          
+        }
+    }
+}
 
 
 

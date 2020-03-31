@@ -11,5 +11,7 @@
     .form__title {
         font-style: normal;
         font-weight: bold;
+        color: $color_blue;
+        font-size: rem($font_size_sm);
     }
 }

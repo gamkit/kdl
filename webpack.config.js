@@ -94,7 +94,7 @@ module.exports = (env = {}) => {
         output: {
             filename: isProd ? 'js/[name].[contenthash].js' : undefined,
             path: DIR_PATHS.dist,
-            publicPath: '/'
+            // publicPath: '/'
         },
 
         module: {

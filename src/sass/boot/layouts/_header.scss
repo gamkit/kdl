@@ -70,7 +70,7 @@
         @include abs-center;
         width: 58.18px;
         height: 48px;
-        img {@include img-responsive;}
+        text-align: center;
     }
 
     .header__btn-hamburger {
@@ -120,8 +120,8 @@
         .header__top {display: none;}
         .header__bottom {padding: 10px 15px;}
         .header__phone-numbers {display: none;}
-        .header__logo {
-            width: 38px;
+        .header__logo .svg-logo{
+            width: (58.18 / 1.5) + px !important;
          
         }
     }

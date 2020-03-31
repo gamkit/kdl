@@ -1,3 +1,71 @@
-section
+section.modals
     .modals__wrap
-        .modal-item
+        .modal.modal-menu
+            .modal__wrap
+                .modal-menu__header.row-mg
+                    button.btn.btn-close.modal-menu__btn-close
+                    a(href="/").modal-menu__logo
+                        +svg('', 'svg-logo-white', "svg-logo svg-logo--size--md")
+                    a(href="").modal-menu__btn-donut.btn.btn-donut--sm--icon.btn-donut.btn--theme--orange
+                        span Помочь 
+                        i.btn__glyph.glyph-kid
+                
+                .container
+                    .modal-menu__content
+                        nav.modal-menu__navbar.navbar
+                            //- ul.navbar__list.modal-menu__navbar-list
+                                li.navbar-item.modal-menu__navbar-item
+                                    a(href="index.html") Главная
+                                li.navbar-item.navbar-item--sub.modal-menu__navbar-item
+                                    a(href="about.html") О нас
+                                    .navbar-item__navbar.navbar
+                                        ul.navbar__list.modal-menu__navbar-list
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="team.html") Команда
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="founders.html") Правление
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="trustees.html") Попечительный совет
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="media_news.html") СМИ о нас
+                                li.navbar-item.modal-menu__navbar-item.navbar-item--sub
+                                    a(href="projects.html") Проекты
+                                    .navbar-item__navbar.navbar
+                                        ul.navbar__list.modal-menu__navbar-list
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="team.html") Донорство
+                                            
+                                li.navbar-item.modal-menu__navbar-item
+                                    a(href="volunteers.html") Волонтерство
+                                li.navbar-item.modal-menu__navbar-item
+                                    a(href="documents.html") Документы
+                                li.navbar-item.navbar-item--sub.modal-menu__navbar-item
+                                    a(href="") Отчеты
+                                    .navbar-item__navbar.navbar
+                                        ul.navbar__list.modal-menu__navbar-list
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="gallery_reports.html") Фото и видео
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="financial_reports.html") Финансовые отчеты
+                                            li.navbar-item.modal-menu__navbar-item
+                                                a(href="financial_reports.html") Годовые отчеты
+                                            
+                                li.navbar-item.modal-menu__navbar-item
+                                    a(href="contacts.html") Контакты
+                        hr.modal-menu__line
+                        a(href="help.html").modal-menu__help-link Нужна помощь!
+                        ul.modal-menu__social-links.social-links.social-links--theme--white.row
+                            li.social-links__item
+                                a(href="")
+                                    i.glyph-social-vk
+                            li.social-links__item
+                                a(href="")
+                                    i.glyph-social-ig
+                            li.social-links__item
+                                a(href="")
+                                    i.glyph-social-tg
+
+                        .modal-menu__phone-numbers.phone-numbers
+                            i.phone-numbers__glyph.glyph-phone-1
+                            p 8 (960) 435-55-22
+                            p 8 (928) 731-26-02

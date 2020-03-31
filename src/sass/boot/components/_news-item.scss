@@ -3,6 +3,10 @@
     border: 1px solid rgba(51, 58, 60, 0.48);
     border-radius: 6px;
     overflow: hidden;
+
+    .news-item__preview {
+        img {@include img-responsive;}
+    }
     
 
     .news-item__info {

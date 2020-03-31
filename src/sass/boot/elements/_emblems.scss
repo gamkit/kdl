@@ -21,5 +21,11 @@
         .svg-logo__pic, .svg-logo__text {fill: #fff !important;}
         .svg-logo__pic-stroke {stroke: #fff !important;}
     }
+
+    &.svg-logo--size--md {
+        width: (58.18 / 1.5) + px;
+    }
 }
+
+
 
