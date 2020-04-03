@@ -53,6 +53,13 @@ module.exports = (env = {}) => {
             })
         });
 
+        plugins.push( new HtmlWebpackPlugin({
+            template: 'views/boot/layouts/_svg-list.pug',
+            filename: 'img/svg/svg-map.html',
+            inject: false,
+            minify: true,
+        }))
+
         plugins.push(new CopyWebpackPlugin([
             { from: 'img', to: 'img'},
             { from: 'fonts', to: 'fonts'},
@@ -112,7 +119,8 @@ module.exports = (env = {}) => {
 
                 {
                     test: /\.pug$/,
-                    loader: 'pug-loader'
+                    loader: 'pug-loader',
+                    options: {pretty: isProd ? true : false}
                 },
 
                 // CSS
@@ -163,7 +171,7 @@ module.exports = (env = {}) => {
 
         plugins: getPlugins(),
 
-        devtool: 'cheap-module-eval-source-map',
+        devtool: isProd ? false : "inline-source-map",
 
         devServer: {
             overlay: true,

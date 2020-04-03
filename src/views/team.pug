@@ -2,19 +2,20 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   main.page.page--team
+    +layout('header')
+    main.page.page--team
     
-        +layout('header')
+        
       
         h3 О нас
 
-        //- SECTION
+        // SECTION
         section.team-members
             .team-members__wrap
                 .container
                     ul.team-members__list.members-list.row
-                        //- 
-                        li.member-item.members-list__item
+                        // - 
+                        li.member-item
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -22,8 +23,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item
+                        // - 
+                        li.member-item
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -31,8 +32,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item
+                        // - 
+                        li.member-item
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -40,8 +41,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item
+                        // - 
+                        li.member-item
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -49,8 +50,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item
+                        // - 
+                        li.member-item
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -58,8 +59,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item
+                        // - 
+                        li.member-item
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -68,7 +69,7 @@ block content
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
 
-
+        // SECTION
         section.team-action
             .team-action__wrap
                 .action-block.team-action__action-block.bg-gradient--blue

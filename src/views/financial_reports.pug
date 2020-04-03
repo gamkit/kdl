@@ -2,13 +2,15 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   main.page.page--financial-reports
     
-        +layout('header')
+    +layout('header')
+    main.page.page--financial-reports
+    
+        
       
         h3 Финансовые отчеты
 
-        //- SECTION
+        // SECTION
         section.financial-reports-years
             .financial-reports-years__wrap
                 .container
@@ -18,7 +20,7 @@ block content
                             li(data-tab-index="1").tab-item Проекты
                         
                         .tabs__content
-                            //- 
+                            // - 
                             div(data-tab-index="0").tab-content-item.tab-content-item--active
                                 ul.row
                                     li(data-report-year="2012").financial-report-item.financial-reports-years__item
@@ -40,7 +42,7 @@ block content
                                     li(data-report-year="2020").financial-report-item.financial-reports-years__item
                                         p.financial-report-item__year 2020
                             
-                            //- 
+                            // - 
                             div(data-tab-index="1").tab-content-item
                                 ul.row
                                     li(data-report-year="2012").financial-report-item.financial-reports-years__item
@@ -62,7 +64,7 @@ block content
                                     li(data-report-year="2020").financial-report-item.financial-reports-years__item
                                         p.financial-report-item__year 2020
                             
-        //- SECTION
+        // SECTION
         section.financial-reports-months
             .financial-reports-months__wrap
                 button.btn.btn-close.financial-reports-months__btn-close
@@ -106,7 +108,7 @@ block content
 
 
         
-        //- SECTION                        
+        // SECTION                        
         section.financial-reports-action
             .financial-reports__wrap
                 .action-block.financial-reports__action-block.bg-gradient--orange

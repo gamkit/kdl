@@ -2,13 +2,15 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   main.page.page--contacts
+
+    +layout('header')
+    main.page.page--contacts
     
-        +layout('header')
+
       
         h3 Контакты
 
-        //- SECTION
+        // SECTION
         section.contacts-opening
             .contacts-opening__wrap
                 .container
@@ -16,7 +18,7 @@ block content
                         h1 Клуб Добрых Людей (КДЛ)
                         p Благотворительный фонд социальной помощи и поддержки граждан
                     
-        //- SECTION
+        // SECTION
         section.contacts-info
             .contacts-info__wrap
                 .container
@@ -41,7 +43,8 @@ block content
                         p Ставропольское отделение № 5230
                         p ПАО "Сбербанк"
                         p <b>к/с:</b> 30101810907020000615 
-
+        
+        // SECTION
         section.contacts-form
             .contacts-form__wrap
                 .container

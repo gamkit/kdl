@@ -60,21 +60,25 @@
         text-align: center;
     }
 
-    .modal-menu__navbar {
+    .modal-menu__nav {
         color: #fff;
         text-align: center;
     }
 
+    .modal-menu__navbar{
+        .navbar-item {
+            margin: rem($font_size_sm) 0;
+        }
+    }
     
 
     .navbar-item__navbar {
         position: static !important;
         color: rgba($color: $color_orange, $alpha: 0.5);
+
     }
 
-    .modal-menu__navbar-item {
-        margin: rem($font_size_sm) 0;
-    }
+    
 
     .modal-menu__line {
         border: none;

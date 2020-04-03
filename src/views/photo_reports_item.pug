@@ -2,13 +2,15 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   main.page.page--contacts
+
+    +layout('header')
+    main.page.page--contacts
     
-        +layout('header')
+        
       
         h3 Документы фонда
 
-        //- SECTION
+        // SECTION
         section.contacts-box
             .contacts-box__wrap
                 .container

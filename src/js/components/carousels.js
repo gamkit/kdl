@@ -1,6 +1,6 @@
 import 'owl.carousel';
 
-$('.needy-list__owl-carousel').owlCarousel({
+$('.collects-list__owl-carousel').owlCarousel({
     items: 4,
     nav: true,
     autoplay: true,

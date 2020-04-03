@@ -194,14 +194,14 @@
 // -------------------------------------------------
 
 
-.home-needy {
-    .home-needy__wrap {margin-bottom: 56px;}
+.home-collects {
+    .home-collects__wrap {margin-bottom: 56px;}
 
-    .home-needy__heading {
+    .home-collects__heading {
         text-align: center;
     }
 
-    .home-needy__needy-list {
+    .home-collects__collects-list {
         .owl-stage-outer {
             margin-bottom: -32px;
         }
@@ -275,18 +275,18 @@
 
     .home-partners__partners-list {
         margin: 0;
-    }
-   
-
-    .home-partners__partners-list {
         padding-top: 15px;
         background: #FFFFFF;
         box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.07);
-    }
 
-    .partners-list__item {
-        padding: 15px;
+        .partners-item {
+            padding: 15px;
+        }
     }
+   
+
+    
+    
 }
 
 
@@ -400,23 +400,19 @@
 
     .team-members__list {
         margin: 0;
+
+        .member-item {
+            width: size(4);
+            margin: $gutter;
+        }
+
     }
-
-
-    .members-list__item {
-        width: size(4);
-        margin: $gutter;
-
-        
-    }
-
-
      
 }
 
 @include mq("md_max") {
-    .team-members  {
-        .members-list__item {
+    .team-members .team-members__list {
+        .member-item {
             width: size(6);
         }
     }
@@ -425,8 +421,8 @@
 
 
 @include mq("sm_max") {
-    .team-members  {
-        .members-list__item {
+    .team-members .team-members__list {
+        .member-item {
             width: size(12);
         }
     }
@@ -472,12 +468,14 @@
 
     .founders-members__founders-list {
         justify-content: center;
+
+        .founder-item {
+            width: size(4);
+            margin: $gutter;
+        }
     }
 
-    .founders-list__item {
-        width: size(4);
-        margin: $gutter;
-    }
+    
 }
 
 
@@ -517,17 +515,26 @@
 
 .medianews-box {
 
-    .medianews-list__item {
-        width: size(6);
-        margin: $gutter;
+    .medianews-list {
+
+        .medianews-item {
+            width: size(6);
+            margin: $gutter;
+        }
+        
     }
     
 }
 
 @include mq("sm_max") {
     .medianews-box {
-        .medianews-list__item {
-            width: size(12);
+        .medianews-list {
+
+            .medianews-item {
+                width: size(12);
+         
+            }
+            
         }
     }
 }
@@ -567,14 +574,8 @@
 
 .trustees-members {
 
-    .trustees-members__trustees-list {
-        justify-content: center;
-    }
 
-    .trustees-list__item {
-        width: size(4);
-        margin: $gutter;
-    }
+    
 }
 
 

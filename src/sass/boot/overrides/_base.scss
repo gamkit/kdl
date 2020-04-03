@@ -33,13 +33,13 @@
 .page--founders, .page--trustees {
 
     @include mq("md") {
-        .founders-list__item {
+        .founders-members__founders-list .founder-item {
             width: size(6);
         }
     }
 
     @include mq("sm_max") {
-        .founders-list__item {
+        .founders-members__founders-list .founder-item {
             width: size(12);
         }
     }
@@ -51,7 +51,7 @@
 .page--team,
 .page--volunteers
  {
-    .members-list__item {
+    .member-item {
         // width: size(4);
         margin: $gutter;
 

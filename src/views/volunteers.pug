@@ -2,13 +2,15 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   main.page.page--volunteers
+
+    +layout('header')
+    main.page.page--volunteers
     
-        +layout('header')
+       
       
         h3 Волонтеры
 
-        //- SECTION
+        // SECTION
         section.volunteers-opening
             .volunteers-opening__wrap
                 .container
@@ -16,7 +18,7 @@ block content
                         img(src="img/svg/volunteer_slogan.svg", alt="").img-responsive
         
 
-        //- SECTION
+        // SECTION
         section.volunteers-desc
             .volunteers-desc__wrap
                 .container
@@ -30,14 +32,14 @@ block content
                             img(src="img/volunteer_img_2.jpg", alt="").img-responsive
 
 
-        //- SECTION
+        // SECTION
         section.volunteers-members
             .volunteers-members__wrap
                 .container
                     h4 Наши волонтеры
                     ul.volunteers-members__members-list.owl-carousel.members-list__owl-carousel.members-list.owl-carousel--custom-nav-1
-                        //- 
-                        li.member-item.members-list__item.member-item--status--volunteer
+                        // - 
+                        li.member-item.member-item--status--volunteer
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -45,8 +47,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item.member-item--status--volunteer
+                        // - 
+                        li.member-item.member-item--status--volunteer
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -54,8 +56,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item.member-item--status--volunteer
+                        // - 
+                        li.member-item.member-item--status--volunteer
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -63,8 +65,8 @@ block content
                                 .member-item__position Менеджер
                                 p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        //- 
-                        li.member-item.members-list__item.member-item--status--volunteer
+                        // - 
+                        li.member-item.member-item--status--volunteer
                             .member-item__photo
                                 img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
                             .member-item__contacts
@@ -74,7 +76,7 @@ block content
                                 p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
 
 
-        //- SECTION
+        // SECTION
         section.volunteers-form
             .volunteers-form__wrap
                 .container

@@ -2,19 +2,21 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   main.page.page--documents
+
+    +layout('header')
+    main.page.page--documents
     
-        +layout('header')
+        
       
         h3 Документы фонда
 
-        //- SECTION
+        // SECTION
         section.documents-box
             .documents-box__wrap
                 .container
                     ul.documents-box__list.documents-items-list
                         //-
-                        li.documents-list__link-item 
+                        li.documents-list__link-item
                             span.file-link.documents-box__file-link
                                 .file-link__info
                                     i
@@ -23,7 +25,7 @@ block content
                                 a(href="").file-link__title Публичная оферта
                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
                         //-
-                        li.documents-list__link-item 
+                        li.documents-list__link-item
                             span.file-link.documents-box__file-link
                                 .file-link__info
                                     i

@@ -1,13 +1,17 @@
-.needy-item {
+.collect-item {
     overflow: hidden;
     background-color: #fff;
     border: 1px solid rgba(51, 58, 60, 0.15);
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
 
-    &.needy-item--done {
+    &.collect-item--done {
+
+        .collect-item__title-done {
+            display: block;
+        }
         
-        .needy-item__preview {
+        .collect-item__preview {
             &:after {
                 content: "";
                 position: absolute;
@@ -20,7 +24,7 @@
             }
         }
         
-        .needy-item__bar {
+        .collect-item__bar {
             border-color: $color_orange;
             span {
                 background-color: $color_orange;
@@ -28,15 +32,15 @@
             }
         }
 
-        .needy-item__collected {
+        .collect-item__collected {
             display: none;
         }
 
-        .needy-item__needed {
+        .collect-item__needed {
             margin-right: auto; 
         }
 
-        .needy-item__icon-done {
+        .collect-item__icon-done {
             display: block;
         }
 
@@ -47,7 +51,7 @@
 
  
 
-.needy-item__preview {
+.collect-item__preview {
     position: relative;
     img {
         @include img-responsive;
@@ -55,15 +59,33 @@
     
 }
 
-.needy-item__desc {
+.collect-item__title-done {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: $color_orange;
+    border-radius: 4px;
+    z-index: 3;
+    text-align: center;
+}
+
+.collect-item__desc {
     padding: 0 15px;
 }
 
-.needy-item__name {
+.collect-item__name {
     span {opacity: 0.6;}
 }
 
-.needy-item__collect {
+.collect-item__collect {
     background: rgba(51, 58, 60, 0.02);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 6px 6px;
@@ -72,13 +94,13 @@
     justify-content: space-around;
 }
 
-.needy-item__icon-done {
+.collect-item__icon-done {
     display: none;
     font-size: rem($font_size_sm);
     color: green;
 }
 
-.needy-item__bar {
+.collect-item__bar {
     width: 100%;
     margin-top: 15px;
     border: 1px solid $color_blue;
@@ -98,14 +120,14 @@
    
 }
 
-.needy-item__collected {
+.collect-item__collected {
     margin-right: auto;
     b {
         color: #000;
     }
 }
 
-.needy-item__needed {
+.collect-item__needed {
     b {
         color: $color_orange;
     }

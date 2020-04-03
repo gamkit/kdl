@@ -2,19 +2,21 @@ extends boot/base/_base.pug
 
 //- Insert your code after content block
 block content
-   main.page.page--founders
+
+    +layout('header')
+    main.page.page--founders
     
-        +layout('header')
+        
       
         h3 Правление фонда
 
-        //- SECTION
+        // SECTION
         section.founders-members
             .founders-members__wrap
                 .container
                     ul.founders-members__founders-list.founders-list.row
-                        //- 
-                        li.founder-item.founders-list__item
+                        // - 
+                        li.founder-item
                             .founder-item__photo
                                 img(src="uploads/images/founder_item.jpg", alt="founder_item").img-responsive
                             .founder-item__contacts
@@ -24,8 +26,8 @@ block content
                                 p.founder-item__connect <b>Email.:</b> dobrokdl@gmail.com
                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                         
-                        //- 
-                        li.founder-item.founders-list__item
+                        // - 
+                        li.founder-item
                             .founder-item__photo
                                 img(src="uploads/images/founder_item.jpg", alt="founder_item").img-responsive
                             .founder-item__contacts
@@ -35,8 +37,8 @@ block content
                                 p.founder-item__connect <b>Email.:</b> dobrokdl@gmail.com
                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                         
-                        //- 
-                        li.founder-item.founders-list__item
+                        // - 
+                        li.founder-item
                             .founder-item__photo
                                 img(src="uploads/images/founder_item.jpg", alt="founder_item").img-responsive
                             .founder-item__contacts
@@ -46,8 +48,8 @@ block content
                                 p.founder-item__connect <b>Email.:</b> dobrokdl@gmail.com
                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                         
-                        //- 
-                        li.founder-item.founders-list__item
+                        // - 
+                        li.founder-item
                             .founder-item__photo
                                 img(src="uploads/images/founder_item.jpg", alt="founder_item").img-responsive
                             .founder-item__contacts
@@ -57,8 +59,8 @@ block content
                                 p.founder-item__connect <b>Email.:</b> dobrokdl@gmail.com
                                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                         
-                        //- 
-                        li.founder-item.founders-list__item
+                        // - 
+                        li.founder-item
                             .founder-item__photo
                                 img(src="uploads/images/founder_item.jpg", alt="founder_item").img-responsive
                             .founder-item__contacts
