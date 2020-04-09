@@ -3,9 +3,11 @@ import 'owl.carousel';
 $('.collects-list__owl-carousel').owlCarousel({
     items: 4,
     nav: true,
-    autoplay: true,
+    // autoplay: true,
     navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
     dots: false,
+    autoplayHoverPause: true,
+    autoplayTimeout:3000,
     margin: 20,
     responsive: {
         0: {
@@ -26,9 +28,10 @@ $('.partners-list__owl-carousel').owlCarousel({
     autoplay: true,
     items: 6,
     margin: 50,
+    autoplayTimeout:2000,
     responsive: {
         0: {
-            items: 3,
+            items: 1,
         },
         768: {
             items: 4
@@ -47,7 +50,8 @@ $('.news-list__owl-carousel').owlCarousel({
     nav: true,
     items: 3,
     navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
-   
+    autoplayHoverPause: true,
+    autoplayTimeout:4000,
     margin: 30,
     responsive: {
         0: {

@@ -1,0 +1,33 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+    +layout('header')
+    main.page.page-collect
+              
+        h3 Сбор № 121
+
+        // SECTION
+        section.collect-box
+            .collect-box__wrap
+                .container
+                    .collect-box__collect-info-item.collect-item.collect-item--urgent
+                        .row-mg
+                            .collect-item__preview(style="background-image: url(uploads/images/medianews_item.jpg);")
+                                //- img(src="uploads/images/medianews_item.jpg", alt="")
+                                .collect-item__title-done Сбор закрыт
+                                .collect-item__title-urgent Срочный сбор
+
+                            .collect-item__desc
+                                h4.collect-item__name <b>Точиев Али</b>, 14 лет
+                                p.collect-item__diagnosis <b>Диагноз:</b><br/> ПЦНС,Эпилепсия; Аутизм, (ЗПРР),Сердечная недостаточность, Псориаз 1 степени Повышенный гипертонус мышц. 
+                                p.collect-item__target <b>Цель сбора:</b><br/> Установка артикуляционного спейсера
+                                .collect-item__collect.row
+                                    div.collect-item__bar <span ></span>
+                                    p.collect-item__collected Собрано <br/><b>25000 р.</b>
+                                    p.collect-item__needed Требуется <br/><b>25000 р.</b>
+                                    p.collect-item__icon-done
+                                        i.glyph-check-1
+                    
+                    .collect-box__collect-info-post
+

@@ -1,0 +1,39 @@
+.breadcumbs {
+
+    .breadcumbs__list {
+        border: 1px solid rgba($color: $color_dark, $alpha: 0.1);
+        // padding-top: rem($font_size_sm);
+        margin-bottom: rem($font_size_lg);
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .breadcumb-item {
+        font-family: $second_font_family;
+        color: $color_dark;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            
+        }
+
+        &:after {
+            content: "/";
+            margin: 0 5px;
+            color: $color_orange;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        &:first-child a {
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        &:last-child:after {
+            content: none;
+        }
+    }
+}

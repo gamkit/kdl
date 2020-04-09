@@ -1,4 +1,4 @@
-.page--home {
+.page-home {
     .header .header__wrap {
         height: auto;
     }
@@ -7,7 +7,7 @@
 // -----------------------------------------------------
 
 
-.page--about, .page--team, .page--trustees, .page--projects, .page--financial-reports {
+.page-about, .page-team, .page-trustees, .page-projects, .page-financial-reports {
     margin-bottom: 0 !important;
 
 
@@ -30,7 +30,7 @@
 
 
 
-.page--founders, .page--trustees {
+.page-founders, .page-trustees {
 
     @include mq("md") {
         .founders-members__founders-list .founder-item {
@@ -48,8 +48,8 @@
 
 // -----------------------------------------------------
 
-.page--team,
-.page--volunteers
+.page-team,
+.page-volunteers
  {
     .member-item {
         // width: size(4);
@@ -97,7 +97,7 @@
 // -----------------------------------------------------
 
 
-.page--projects, .page--financial-reports {
+.page-projects, .page-financial-reports {
 
     .tabs {
         .tabs__list {

@@ -14,7 +14,8 @@ $screen_sm			    	    : 481px;
 $screen_xs			    	    : 320px;
 
 
-$screen_default                 : 1180px;
+// $screen_default                 : 1180px;
+$screen_default                 : $screen_xl;
 $gutter                         : 15px;
 
 
@@ -33,6 +34,7 @@ $color_gray                     : #333A3C;
 $color_orange                   : #FF7B17;
 $color_blue                     : #0191B6;
 $color_light_blue               : #37BBCA;
+$color_red                      : rgb(211, 74, 33);
 
 
 $gradient_blue                  : linear-gradient(99.32deg, $color_light_blue 0%, $color_blue 100%), #2A3032;

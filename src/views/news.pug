@@ -3,7 +3,7 @@ extends boot/base/_base.pug
 //- Insert your code after content block
 block content
     +layout('header')
-    main.page.page--news
+    main.page.page-news
     
         
       
@@ -59,3 +59,28 @@ block content
                                     h4.news-item__title Знакомство с ментальной арифметикой...
                                     span.news-item__date 23.04.2019
                                     p.news-item__text Наши маленькие подопечные продолжают развивать умственные и творческие способности.
+
+                    ul.pagination.row
+                        li.pagination-item.pagination-item--previous
+                            a(href="") <<
+                        li.pagination-item.pagination-item--current
+                           a(href="") 1
+                        li.pagination-item
+                            a(href="") 1
+                        li.pagination-item
+                            a(href="") 1
+                        li.pagination-item
+                            a(href="") 1
+                        li.pagination-item
+                            a(href="") 1
+                        li.pagination-item.pagination-item--next
+                            a(href="") >>
+
+
+
+
+
+
+
+
+

@@ -4,6 +4,10 @@
     border-radius: 8px;
     border: 1px solid rgba(89, 94, 104, 0.35);
 
+    a {
+        color: $color_dark;
+    }
+
     &.member-item--status--volunteer {
         .member-item__contacts {
             color: #fff;

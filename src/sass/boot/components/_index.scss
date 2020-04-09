@@ -2,18 +2,20 @@
 @import 'navbar';
 @import 'tabs';
 @import 'form';
+@import 'pagination';
 @import 'file-link';
 @import 'action-block';
 @import 'gallery-item'; 
 // @import 'gallery'; gallery--type--video
 @import 'phone-numbers';
-@import 'needy-item';
+@import 'collect-item';
+ 
 @import 'help-item';
 @import 'news-item';
 @import 'goal-item';
 
 @import 'member-item'; // team-member-item--status--volunteer
-// @import 'breadcumbs';
+@import 'breadcumbs';
 @import 'founder-item'; // founder-item--status--trustee
 @import 'medianews-item';
 @import 'project-item';

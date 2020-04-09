@@ -1,0 +1,47 @@
+.pagination {
+
+    .pagination-item {
+        color: #fff;
+        margin: $gutter / 2;
+
+        a,span {
+            display: inline-block;
+            color: inherit;
+            background-color: $color_blue;
+            width: 48px;
+            height: 48px;
+            text-align: center;
+            padding-top: 15px;
+            border-radius: 4px;
+            border: 1px solid $color_blue;
+        }
+
+        &.pagination-item--current span {
+            border-color: $color_dark;
+            background-color: $color_dark;
+            color: #fff;
+        }
+
+        &.pagination-item--dots span {
+            border-color: $color_dark;
+            background-color: #fff;
+            color: $color_dark;
+        }
+
+        &.pagination-item--previous a,
+        &.pagination-item--next a {
+            background-color: #fff;
+            border-color: $color_blue;
+            color: $color_blue;
+        }
+
+        &.pagination-item--previous span,
+        &.pagination-item--next span {
+            background-color: #fff;
+            border-color: $color_dark;
+            color: $color_dark;
+        }
+
+         
+    }
+}

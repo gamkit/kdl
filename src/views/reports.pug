@@ -1,0 +1,34 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+    
+    +layout('header')
+    main.page.page-reports
+    
+        
+      
+        h3 Отчеты
+
+        section.breadcumbs
+         .container
+            ul.breadcumbs__list.row-mg
+               li.breadcumb-item
+                  a(href="/") Главная
+               li.breadcumb-item
+                  a(href="") Отчеты
+
+
+        section.reports-links-box
+            .reports-links-box__wrap
+                .container
+                    ul.reports-links-box__list
+                        li.reports-links-box__item
+                            a(href="reports") Фото и видео
+                        li.reports-links-box__item
+                            a(href="reports") Финансовые отчеты
+
+
+
+                                
+                            

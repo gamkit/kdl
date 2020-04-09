@@ -38,6 +38,9 @@
 
             .navbar-item {
                 margin-bottom: rem($base_font_size);
+                border-bottom: 1px solid rgba($color: $color_orange, $alpha: 0.3);
+                padding-bottom: 5px;
+                
                 &:last-child{margin-bottom: 0;}
                 a {
                     color: inherit;

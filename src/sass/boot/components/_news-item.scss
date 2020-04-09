@@ -1,11 +1,18 @@
 .news-item {
-    background-color: #fff;
-    border: 1px solid rgba(51, 58, 60, 0.48);
+    // background-color: #fff;
+    // border: 1px solid rgba(51, 58, 60, 0.48);
     border-radius: 6px;
     overflow: hidden;
 
+    &:hover {
+        .news-item__title {color: $color_orange;}
+    }
+
     .news-item__preview {
-        img {@include img-responsive;}
+        position: relative;
+        overflow: hidden;
+        background-color: $color_dark;
+        border: 1px solid rgba($color: $color_dark, $alpha: 0.3);
     }
     
 
@@ -20,6 +27,7 @@
         text-align: left;
         margin: 16px 0;
         color: $color_blue;
+        transition: 0.3s;
     }
 
     .news-item__date {
@@ -29,5 +37,13 @@
 
     .news-item__text {
         color: $color_dark;
+    }
+
+    .news-item__more {
+        color: $color_dark;
+        text-decoration: underline;
+        font-style: normal;
+        font-weight: bold;
+        color: $color_orange;
     }
 }

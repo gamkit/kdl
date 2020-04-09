@@ -1,0 +1,92 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+    +layout('header')
+    main.page.page-collects
+        
+      
+        h3 Сборы
+
+        
+        // SECTION
+        section.collects-list-box
+            .collects-list-box__wrap
+                .container
+                    ul.collects-list-box__collects-list.collects-list.row
+                        // - 
+                        li.collect-item
+                            a(href="").collect-item__link    
+                                .collect-item__preview
+                                    img(src="uploads/images/needy.jpg", alt="")
+                                .collect-item__desc
+                                    p.collect-item__name <b>Jane Doe</b>, 10 лет<br/>
+                                        span Диагноз: ДЦП
+                                    .collect-item__collect.row
+                                        div.collect-item__bar <span ></span>
+                                        p.collect-item__collected Собрано <br/><b>25000 р.</b>
+                                        p.collect-item__needed Требуется <br/><b>25000 р.</b>
+                                        p.collect-item__icon-done
+                                            i.glyph-check-1
+                        // - 
+                        li.collect-item.collect-item--done
+                            a(href="").collect-item__link    
+                                .collect-item__preview
+                                    img(src="uploads/images/needy.jpg", alt="")
+                                    .collect-item__title-done Сбор закрыт
+                                .collect-item__desc
+                                    p.collect-item__name <b>Jane Doe</b>, 10 лет<br/>
+                                        span Диагноз: ДЦП
+                                    .collect-item__collect.row
+                                        div.collect-item__bar <span style="width: 100%"></span>
+                                        p.collect-item__collected Собрано <br/><b>12000 р.</b>
+                                        p.collect-item__needed Требуется <br/><b>25000 р.</b>
+                                        p.collect-item__icon-done 
+                                            i.glyph-check-1
+                        
+                                
+                        
+                        // - 
+                        li.collect-item
+                            a(href="").collect-item__link    
+                                .collect-item__preview
+                                    img(src="uploads/images/news_item.jpg", alt="")
+                                .collect-item__desc
+                                    p.collect-item__name <b>Jane Doe</b>, 10 лет<br/>
+                                        span Диагноз: ДЦП
+                                    .collect-item__collect.row
+                                        div.collect-item__bar <span></span>
+                                        p.collect-item__collected Собрано <br/><b>12000 р.</b>
+                                        p.collect-item__needed Требуется <br/><b>25000 р.</b>
+                                        p.collect-item__icon-done
+                                            i.glyph-check-1
+                        
+                        // - 
+                        li.collect-item
+                            a(href="").collect-item__link    
+                                .collect-item__preview
+                                    img(src="uploads/images/needy.jpg", alt="")
+                                .collect-item__desc
+                                    p.collect-item__name <b>Jane Doe</b>, 10 лет<br/>
+                                        span Диагноз: ДЦП
+                                    .collect-item__collect.row
+                                        div.collect-item__bar <span></span>
+                                        p.collect-item__collected Собрано <br/><b>12000 р.</b>
+                                        p.collect-item__needed Требуется <br/><b>25000 р.</b>
+                                        p.collect-item__icon-done
+                                            i.glyph-check-1
+                        
+                        // - 
+                        li.collect-item
+                            a(href="").collect-item__link    
+                                .collect-item__preview
+                                    img(src="uploads/images/needy.jpg", alt="")
+                                .collect-item__desc
+                                    p.collect-item__name <b>Jane Doe</b>, 10 лет<br/>
+                                        span Диагноз: ДЦП
+                                    .collect-item__collect.row
+                                        div.collect-item__bar <span></span>
+                                        p.collect-item__collected Собрано <br/><b>12000 р.</b>
+                                        p.collect-item__needed Требуется <br/><b>25000 р.</b>
+                                        p.collect-item__icon-done
+                                            i.glyph-check-1

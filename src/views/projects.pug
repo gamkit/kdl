@@ -4,7 +4,7 @@ extends boot/base/_base.pug
 block content
 
     +layout('header')
-    main.page.page--projects
+    main.page.page-projects
     
         
       
@@ -32,9 +32,7 @@ block content
                             // - Tab content
                             ul(data-tab-index="0").tab-content-item.tab-content-item--active.projects-box__project-list.project-list.project-list--active.owl-carousel.project-list__owl-carousel.owl-carousel--custom-nav-2
                                 // - 
-                                li.project-item
-                                    .project-item__preview
-                                        img(src="uploads/images/project_item.jpg", alt="")
+                                li.project-item(style="background-image: url(uploads/images/needy.jpg);")
                                     .project-item__desc
                                         h4.project-item__title Программа А
                                         p.project-item__date Дата запуска: <b>23.04.2019</b>
@@ -42,20 +40,21 @@ block content
                                         a(href).btn.btn--theme--white-to-orange Перейти
                                 
                                 // - 
-                                li.project-item
-                                    .project-item__preview
-                                        img(src="uploads/images/project_item.jpg", alt="")
+                                li.project-item(style="background-image: url(uploads/images/project_item.jpg);")
                                     .project-item__desc
-                                        h4.project-item__title Программа B
+                                        h4.project-item__title Программа А
                                         p.project-item__date Дата запуска: <b>23.04.2019</b>
                                         p.project-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
                                         a(href).btn.btn--theme--white-to-orange Перейти
+                                
+                                
+                            
+                            //- ---------------------------------------------------------- 
+                            
                             // - Tab content 
                             ul(data-tab-index="1").tab-content-item.projects-box__project-list.project-list.owl-carousel.project-list__owl-carousel.owl-carousel--custom-nav-2
                                 // - 
-                                li.project-item
-                                    .project-item__preview
-                                        img(src="uploads/images/project_item.jpg", alt="")
+                                li.project-item(style="background-image: url(uploads/images/needy.jpg);")
                                     .project-item__desc
                                         h4.project-item__title Проект А
                                         p.project-item__date Дата запуска: <b>23.04.2019</b>
@@ -63,9 +62,7 @@ block content
                                         a(href).btn.btn--theme--white-to-orange Перейти
 
                                 // - 
-                                li.project-item
-                                    .project-item__preview
-                                        img(src="uploads/images/project_item.jpg", alt="")
+                                li.project-item(style="background-image: url(uploads/images/needy.jpg);")
                                     .project-item__desc
                                         h4.project-item__title Проект B
                                         p.project-item__date Дата запуска: <b>23.04.2019</b>
