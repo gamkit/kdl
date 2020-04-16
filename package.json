@@ -51,6 +51,7 @@
   },
   "homepage": "https://github.com/absens-x/kdl#readme",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "jquery": "^3.4.1",
     "lightslider": "^1.1.6",
     "normalize.css": "^8.0.1",

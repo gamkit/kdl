@@ -38,42 +38,52 @@ block content
                 .container
                     h4 Наши волонтеры
                     ul.volunteers-members__members-list.owl-carousel.members-list__owl-carousel.members-list.owl-carousel--custom-nav-1
-                        // - 
+                        
+                        // -
                         li.member-item.member-item--status--volunteer
-                            .member-item__photo
-                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
-                            .member-item__contacts
-                                .member-item__name Магомед Магомедов
-                                .member-item__position Менеджер
-                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
-                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        // - 
+                            a(href="")
+                                .member-item__photo(style="background-image: url(/uploads/images/member_item.jpg);")
+                                .member-item__contacts
+                                    .member-item__name Магомед Магомедов
+                                    .member-item__position Менеджер
+                                    p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                    p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                        // -
                         li.member-item.member-item--status--volunteer
-                            .member-item__photo
-                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
-                            .member-item__contacts
-                                .member-item__name Магомед Магомедов
-                                .member-item__position Менеджер
-                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
-                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        // - 
+                            a(href="")
+                                .member-item__photo(style="background-image: url(/uploads/images/member_item.jpg);")
+                                .member-item__contacts
+                                    .member-item__name Магомед Магомедов
+                                    .member-item__position Менеджер
+                                    p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                    p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                        // -
                         li.member-item.member-item--status--volunteer
-                            .member-item__photo
-                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
-                            .member-item__contacts
-                                .member-item__name Магомед Магомедов
-                                .member-item__position Менеджер
-                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
-                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
-                        // - 
+                            a(href="")
+                                .member-item__photo(style="background-image: url(/uploads/images/member_item.jpg);")
+                                .member-item__contacts
+                                    .member-item__name Магомед Магомедов
+                                    .member-item__position Менеджер
+                                    p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                    p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                        // -
                         li.member-item.member-item--status--volunteer
-                            .member-item__photo
-                                img(src="uploads/images/member_item.jpg", alt="member_item").img-responsive
-                            .member-item__contacts
-                                .member-item__name Магомед Магомедов
-                                .member-item__position Менеджер
-                                p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
-                                p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                            a(href="")
+                                .member-item__photo(style="background-image: url(/uploads/images/member_item.jpg);")
+                                .member-item__contacts
+                                    .member-item__name Магомед Магомедов
+                                    .member-item__position Менеджер
+                                    p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                    p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
+                        // -
+                        li.member-item.member-item--status--volunteer
+                            a(href="")
+                                .member-item__photo(style="background-image: url(/uploads/images/member_item.jpg);")
+                                .member-item__contacts
+                                    .member-item__name Магомед Магомедов
+                                    .member-item__position Менеджер
+                                    p.member-item__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                    p.member-item__connect <b>Email.:</b> dobrokdl@gmail.com
 
 
         // SECTION
@@ -83,6 +93,9 @@ block content
                     h4.txt-color--orange Вступить в наши ряды
                     form(action="").form.volunteers-form__form
                         .form__wrap
+                            ul.alerts-list.row-mg
+                                li.alert.alert-error Ошибка 1
+                                li.alert.alert-error Ошибка 2
                             .form__group.form-group
                                 .form-group__fields-list.row
                                     span.field.field-text.form-group__field
@@ -144,7 +157,7 @@ block content
                                 label.form-group__checkbox-container
                                     span.field.field-checkbox
                                         i.field-checkbox__checkmark.glyph-check-1
-                                            input(type="checkbox")
+                                            input(type="checkbox" checked)
                                         p.field-checkbox__title Новые интересы
                                 //- 
                                 label.form-group__checkbox-container

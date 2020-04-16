@@ -540,6 +540,102 @@
 
 
 /*
+* TEAM MEMBER PAGE
+******************************************************************
+*/
+
+.member-box {
+    .member-box__member-info {
+        background-color: #fff;
+        padding: $gutter;
+        border-radius: 8px;
+        border: 1px solid rgba(89, 94, 104, 0.35);
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+        
+    }
+    .member-box__desc {
+        width: size(6);
+        padding: $gutter;
+        
+    }
+   
+    .member-info__photo {
+        width: size(5);
+        height: 400px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4px;
+    }
+
+    .member-info__name {
+        text-align: left;
+        color: $color_blue;
+        margin-top: rem($font_size_sm);
+    }
+
+    .member-info__position {
+        color: $color_orange;
+    }
+
+}
+
+@include mq("md") {
+    .member-box {
+        .member-info {
+            .member-info__photo {
+                width: size(8);
+            }
+
+            .member-box__desc {
+                width: size(12);
+            }
+        }
+    }
+}
+
+@include mq("sm_max") {
+    .member-box {
+        .member-info {
+            .member-info__photo {
+                width: size(12, 0);
+            }
+
+            .member-box__desc {
+                width: size(12);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 * FOUNDERS PAGE
 ******************************************************************
 */
@@ -552,6 +648,19 @@
         .founder-item {
             width: size(4);
             margin: $gutter;
+        }
+
+        .founder-item__photo {
+
+            position: relative;
+            min-height: 400px;
+            overflow: hidden;
+            background-color: $color_dark;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+    
+             
         }
     }
 
@@ -1160,6 +1269,10 @@
         height: 100%;
         background-color: #fff;
         z-index: $z_header + 1;
+
+        &.financial-reports-months--active {
+            display: block;
+        }
     }
 
 
@@ -1168,6 +1281,10 @@
         justify-content: stretch;
         margin: 0;
         height: 100%;
+    }
+
+    .financial-reports-months__icon-spinner {
+        @include abs-center;
     }
 
 
@@ -1182,6 +1299,7 @@
         position: absolute;
         right: 0;
         top: 0;
+        z-index: 1;
     }
 
 }
@@ -1491,6 +1609,7 @@
 ******************************************************************
 */
 
+
 .collect-box {
     .collect-box__wrap {
         margin-top: rem($font_size_lg);
@@ -1566,6 +1685,56 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* FORM DONE PAGE
+******************************************************************
+*/
+
+.form-done-box {
+    
+    .form-done-box__link {
+        margin-top: rem($font_size_lg);
+        display: block;
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        color: $color_dark;
+        text-decoration: underline;
+    }
+}
 
 
 

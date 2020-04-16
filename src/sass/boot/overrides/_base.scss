@@ -1,3 +1,16 @@
+.page-default {
+    .page-default__wrap {
+        background-color: #fff;
+        border: 1px solid rgba($color: $color_dark, $alpha: 0.1);
+        border-radius: 8px;
+
+        img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+    }
+}
+
 .page-home {
     .header .header__wrap {
         height: auto;
@@ -7,7 +20,7 @@
 // -----------------------------------------------------
 
 
-.page-about, .page-team, .page-trustees, .page-projects, .page-financial-reports {
+.page-about, .page-team, .page-trustees, .page-projects, .page-financial-reports, .page-member {
     margin-bottom: 0 !important;
 
 
@@ -52,19 +65,30 @@
 .page-volunteers
  {
     .member-item {
-        // width: size(4);
+        position: relative;
+ 
         margin: $gutter;
+        min-height: 350px;
 
         &:hover {
             .member-item__photo:after { opacity: 1; }
 
             .member-item__contacts {
                 opacity: 1;
-                bottom: 20px;
+                bottom: 10%;
+                // transform: translate(0, 70%);
             }
         }
 
         .member-item__photo {
+            position: absolute;
+            background-color: $color_dark;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+
             &::after {
                 position: absolute;
                 content: "";
@@ -79,15 +103,19 @@
             }
         }
 
+        .member-item__name {
+            margin-top: 0;
+        }
 
         .member-item__contacts {
             position: absolute;
+            padding: 25px 15px;
+            width: 80%;
+            margin: 0 auto;
             left: 0;
             right: 0;
             bottom: 0;
-            padding: 25px 15px;
-            margin: 0 20px;
-            z-index: 1;
+            // transform: translate(0, 100%);
             transition: bottom 0.3s ease-in-out, opacity 0.3s;
 
         }

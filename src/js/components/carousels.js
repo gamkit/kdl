@@ -3,6 +3,7 @@ import 'owl.carousel';
 $('.collects-list__owl-carousel').owlCarousel({
     items: 4,
     nav: true,
+    loop: true,
     // autoplay: true,
     navText: ['<i class="glyph-ar-prev"></i>', '<i class="glyph-ar-next"></i>'],
     dots: false,
@@ -101,6 +102,7 @@ $('.gallery-reports__owl-carousel').owlCarousel({
     autoplay: true,
     nav: true,
     items: 3,
+    // mouseDrag: false,
     navText: ['<i class="icon icon-arr icon-arr--theme--white-dark glyph-ar-left"></i>', '<i class="icon icon-arr icon-arr--theme--white-dark glyph-ar-right"></i>'],
     margin: 30,
     responsive: {

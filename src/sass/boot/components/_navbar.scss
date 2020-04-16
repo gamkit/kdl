@@ -5,12 +5,17 @@
         font-style: normal;
         font-weight: bold;
 
+        &.navbar-item--active {
+            color: $color_orange;
+        }
+
         a {
             color: inherit;
             font-family: $second_font_family;
             font-style: normal;
             font-weight: bold;
             transition: 0.3s;
+            padding: 15px 0;
 
             &:hover {
                 color: $color_orange;
@@ -19,16 +24,18 @@
         }
 
         &.navbar-item--sub {
-            position: relative;
+            // position: relative;
 
             .navbar-item__navbar {
                 overflow: hidden;
                 position: absolute;
-                top: 30px;
+                // color: #fff;
+                top: 42px;
                 padding: 0;
                 border-radius: 0 0 6px 6px;
-                left: 0;
+                // left: 0;
                 max-height: 0;
+                // width: 400%;
                 height: 0;
                 opacity: 1;
                 background-color: rgba($color: $color_dark, $alpha: 0.95);
@@ -44,6 +51,7 @@
                 &:last-child{margin-bottom: 0;}
                 a {
                     color: inherit;
+                    opacity: 0.9;
                     transition: 0.3s;
         
                     &:hover {
@@ -57,7 +65,7 @@
                 .navbar-item__navbar {
                 padding: 15px;
                 height: auto;
-                    max-height: 420px;
+                    max-height: 620px;
                     opacity: 1;
                 }
             }

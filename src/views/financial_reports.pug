@@ -23,13 +23,13 @@ block content
                             // - 
                             div(data-tab-index="0").tab-content-item.tab-content-item--active
                                 ul.row
-                                    li(data-report-year="2012").financial-report-item.financial-reports-years__item
+                                    li(data-report-year="").financial-report-item.financial-reports-years__item.financial-report-item--disabled
                                         p.financial-report-item__year 2012
-                                    li(data-report-year="2013").financial-report-item.financial-reports-years__item
+                                    li(data-report-year="").financial-report-item.financial-reports-years__item.financial-report-item--disabled
                                         p.financial-report-item__year 2013
-                                    li(data-report-year="2014").financial-report-item.financial-reports-years__item
+                                    li(data-report-year="").financial-report-item.financial-reports-years__item.financial-report-item--disabled
                                         p.financial-report-item__year 2014
-                                    li(data-report-year="2015").financial-report-item.financial-reports-years__item
+                                    li(data-report-year="").financial-report-item.financial-reports-years__item.financial-report-item--disabled
                                         p.financial-report-item__year 2015
                                     li(data-report-year="2016").financial-report-item.financial-reports-years__item
                                         p.financial-report-item__year 2016
@@ -66,45 +66,47 @@ block content
                             
         // SECTION
         section.financial-reports-months
+            //- .financial-reports-months__wrap.financial-reports-months--active
             .financial-reports-months__wrap
                 button.btn.btn-close.financial-reports-months__btn-close
                 ul.financial-reports-months__list.row-mg
-                    li(data-report-year="2012").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2013").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2014").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2015").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2016").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2017").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2018").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2019").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2020").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2018").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2019").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
-                    li(data-report-year="2020").financial-report-item.financial-report-item--type--month.financial-reports-months__item
-                        p.financial-report-item__month Скачать отчет за
-                        a(href="").financial-report-item__link Август
+                    i.icon.icon-spinner.financial-reports-months__icon-spinner
+                    //- li(data-report-year="2012").financial-report-item.financial-report-item--disabled.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Январь
+                    //- li(data-report-year="2013").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Февраль
+                    //- li(data-report-year="2014").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Март
+                    //- li(data-report-year="2015").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Апрель
+                    //- li(data-report-year="2016").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Май
+                    //- li(data-report-year="2017").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Июнь
+                    //- li(data-report-year="2018").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Июль
+                    //- li(data-report-year="2019").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Август
+                    //- li(data-report-year="2020").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Сентябрь
+                    //- li(data-report-year="2018").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Октябрь
+                    //- li(data-report-year="2019").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Ноябрь
+                    //- li(data-report-year="2020").financial-report-item.financial-report-item--type--month.financial-reports-months__item
+                    //-     p.financial-report-item__month Скачать отчет за
+                    //-     a(href="").financial-report-item__link Декабрь
 
 
         

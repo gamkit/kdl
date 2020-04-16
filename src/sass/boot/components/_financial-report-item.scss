@@ -9,6 +9,33 @@
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.11);
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
+
+    &.financial-report-item--disabled {
+        color: gray;
+        opacity: 0.5;
+        cursor: no-drop !important;
+
+        a {
+            color: gray;
+            cursor: inherit;
+        }
+        &:hover {
+            background-color: #fff;
+            color: gray !important;
+            a {
+                color: gray;
+            }
+        }
+    }
+
+    &:hover {
+        background-color: $color_blue;
+        color: #fff;
+        a {
+            color: #fff;
+        }
+    }
     
     .financial-report-item__year {
         font-size: rem($font_size_xl);
@@ -21,14 +48,14 @@
         text-decoration: underline;
         font-style: normal;
         font-weight: bold;
+        color: $color_orange;
     }
 
-    .financial-report-item__month {
-        
-    }
+    
 
     &.financial-report-item--type--month {
         cursor: default;
+ 
     }
 
 }

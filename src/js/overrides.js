@@ -25,6 +25,8 @@ import Helper from './helper';
 
 
 
+
+
 // SVG SPRITE
 
 ;( function( window, document ) {
@@ -80,3 +82,6 @@ import Helper from './helper';
     catch( e ){}
  
 }( window, document ) );
+
+
+

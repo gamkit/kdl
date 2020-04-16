@@ -1,0 +1,18 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+   +layout('header')
+   main.page.page-form-done
+      
+      
+
+      section.form-done-box
+         .form-done-box__wrap.container
+            h3.alert.alert-success
+               span.alert-success__title Вы успешно заполнили анкету
+               i.alert-success__icon.glyph-check-1 
+
+            a.form-done-box__link(href="") Вернуться на главную
+
+      

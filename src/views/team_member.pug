@@ -1,0 +1,41 @@
+extends boot/base/_base.pug
+
+//- Insert your code after content block
+block content
+    +layout('header')
+    main.page.page-member
+    
+        
+      
+        h3 Сотрудник
+
+        // SECTION
+        section.member-box
+            .member-box__wrap
+                .container
+                    .member-box__member-info.member-info
+                        .row-mg
+                            .member-info__photo(style="background-image: url(/uploads/images/member_item.jpg);")
+                            .member-box__desc   
+                                h4.member-info__name Магомед Магомедов
+                                p.member-info__position Менеджер
+                                p.member-info__connect <b>Тел.:</b> 8 (928) 731-26-02
+                                p.member-info__connect <b>Email.:</b> dobrokdl@gmail.com
+                        
+                        .member-info__about
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro ipsa ullam incidunt impedit quam tempore ea deserunt natus deleniti!
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro ipsa ullam incidunt impedit quam tempore ea deserunt natus deleniti!
+                                    
+                       
+                        
+                        
+
+        // SECTION
+        section.team-action
+            .team-action__wrap
+                .action-block.team-action__action-block.bg-gradient--blue
+                    .container
+                        h3.action-block__question Хотите участвовать в волонтерстве?
+                        button.btn.btn--theme--white-to-orange.action-block__btn Напишите нам
+
+        

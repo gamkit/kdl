@@ -1,5 +1,9 @@
 .founder-item {
 
+
+    a {
+        color: $color_dark;
+    }
     .founder-item__photo {
         overflow: hidden;
         box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.12);
@@ -10,7 +14,7 @@
         background-color: rgba($color: #fff, $alpha: 0.8);
         border: 1px solid rgba(51, 58, 60, 0.15);
         padding: 32px 15px;
-        margin: 0 15px;
+        margin: 0 5px;
         border-radius: 0 0 6px 6px;
 
     }
@@ -20,7 +24,8 @@
         font-size: rem($font_size_sm);
         font-style: normal;
         font-weight: bold;
-        margin-bottom: rem($base_font_size);
+        text-align: left;
+        margin: rem($base_font_size) 0;
     }
 
     .founder-item__position {
@@ -33,7 +38,7 @@
         font-weight: 300;
     }
 
-    .founder-item__connect {
+    .founder-item__contact {
         margin: 0;
         margin-bottom: 5px;
     }

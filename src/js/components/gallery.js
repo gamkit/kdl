@@ -6,10 +6,27 @@ $(document).ready(function() {
         item:1,
         loop:true,
         thumbItem:9,
-        autoWidth: true,
-        slideMargin:0,
-        enableDrag: false,
-        responsive: true,
+        // autoWidth: true,
+        adaptiveHeight: true,
+        slideMargin:20,
+        enableDrag: true,
+        responsive : [
+            {
+                breakpoint:800,
+                settings: {
+                    item:3,
+                    slideMove:1,
+                    slideMargin:6,
+                  }
+            },
+            {
+                breakpoint:480,
+                settings: {
+                    thumbItem:3,
+                    slideMove:1
+                  }
+            }
+        ],
         enableTouch: true,
         enableDrag: true,
         prevHtml: '<i class="icon icon-arr icon-arr--theme--white-dark glyph-ar-left"></i>',

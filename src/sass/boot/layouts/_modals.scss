@@ -69,12 +69,15 @@
         .navbar-item {
             margin: rem($font_size_sm) 0;
         }
+
+        
     }
     
 
     .navbar-item__navbar {
         position: static !important;
-        color: rgba($color: $color_orange, $alpha: 0.5);
+        color: rgba($color: $color_orange, $alpha: 0.7);
+        width: auto !important;
 
     }
 
